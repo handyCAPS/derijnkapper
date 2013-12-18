@@ -1,0 +1,17 @@
+{
+  "name": "nieuwerijn",
+  "version": "0.0.0",
+  "description": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tim Doppenberg",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-contrib-sass": "~0.6.0",
+    "grunt-contrib-imagemin": "~0.4.0"
+  }
+}
