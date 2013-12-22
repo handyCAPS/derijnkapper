@@ -3241,9 +3241,10 @@ article {
   right: 12px;
   bottom: 18px;
   width: 50%;
-  -webkit-box-shadow: 0px 12px 8px 0px rgba(0, 0, 0, 0.68);
-  -moz-box-shadow: 0px 12px 8px 0px rgba(0, 0, 0, 0.68);
-  box-shadow: 0px 12px 8px 0px rgba(0, 0, 0, 0.68);
+  background: #1f2921;
+  -webkit-box-shadow: 0px 18px 12px 0px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 0px 18px 12px 0px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 18px 12px 0px rgba(0, 0, 0, 0.68);
   z-index: -1;
   transform: rotate(3deg); }
 
@@ -3251,3 +3252,15 @@ article {
 .peeled:before {
   left: 12px;
   transform: rotate(-3deg); }
+
+/* line 50, ../scss/derijn/_derijn-helpers.scss */
+.dotlist__item {
+  display: inline-block; }
+
+/* line 54, ../scss/derijn/_derijn-helpers.scss */
+.price {
+  float: right; }
+
+/* line 58, ../scss/derijn/_derijn-helpers.scss */
+.dots {
+  border-bottom: 2px dotted #1f2921; }
