@@ -1,0 +1,78 @@
+
+
+// MATEN
+
+$base: 1;
+$scale: 1.618;
+
+$step1: $base;
+$step2: $step1 * $scale;
+$step3: $step2 * $scale;
+$step4: $step3 * $scale;
+$step5: $step4 * $scale;
+$step6: $step5 * $scale;
+$step7: $step6 * $scale;
+
+$step-1: $step1 / $scale;
+$step-2: $step-1 / $scale;
+$step-3: $step-2 / $scale;
+$step-4: $step-3 / $scale;
+$step-5: $step-4 / $scale;
+$step-6: $step-5 / $scale;
+$step-7: $step-6 / $scale;
+
+// Colors
+
+$white: #F9F9F9;
+$black: #1F2921;
+
+$primary-color: #4F57AA;
+$secondary-color: #e9e9e9;
+$alert-color: #c60f13;
+$success-color: #5da423;
+
+// colors from colourlovers.com/
+
+$darkPurple: #281451;
+$lightPurple: #7B4DA5;
+$grey: #848484;
+$lightGrey: #F3F3F3;
+$green: #60B983;
+$teal: #309784;
+
+$darkBlue: #263A55;
+$lightBlue: desaturate(#BBD6E1, 20);
+$beige: #E8E7AF;
+$mud: #BB9E8E;
+
+$body-bg: #fff;
+$body-font-color: $white;
+$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+$headerFont: 'Roboto Slab', 'Cherry Swash', serif;
+
+$bodyFont: 'PT Sans', serif;
+
+// .row {
+// 	max-width: 100%;
+// }
+
+ul, ol {
+	list-style-position: inside;
+}
+
+@mixin boradius($rad: 3px) {
+	border-radius: $rad;
+}
+
+@mixin bottomshadow($blur: 10px) {
+	-webkit-box-shadow: 0px 10px $blur -10px darken($grey, 36);
+	-moz-box-shadow: 0px 10px $blur -10px darken($grey, 36);
+	box-shadow: 0px 10px $blur -10px darken($grey, 36);
+}
+
+@mixin noshadow {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}

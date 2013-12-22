@@ -1,0 +1,15 @@
+
+article {
+	background-color: $darkBlue;
+	padding: $step1 + rem;
+	font-size: $step1 + rem;
+		h1, h2 {
+			@include h-label;
+			font-weight: bold;
+			font-size: $step3 + rem;
+		}
+		p {
+			background-color: $lightGrey;
+			padding: $step-1 + rem;
+		}
+}

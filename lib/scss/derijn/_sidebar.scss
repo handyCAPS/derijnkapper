@@ -1,0 +1,12 @@
+.sidebar-item {
+	h2, h3, caption {
+		font-size: $step2 + rem;
+	}
+	ul {
+		background-color: $white;
+		margin: 0;
+		padding: $step1 + rem;
+		line-height: $step2;
+		list-style: none;
+	}
+}

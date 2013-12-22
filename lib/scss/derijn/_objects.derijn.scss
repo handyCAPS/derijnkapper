@@ -1,0 +1,12 @@
+
+@mixin h-label {
+	display: inline-block;
+	background-color: $lightBlue;
+	color: $darkBlue;
+	text-shadow: 	0.5px 0.5px 0px $white,
+					1px 1px 0px $white,
+					1.5px 1.5px 0px $white;
+	padding: 0 $step1 + rem;
+	position: relative;
+	left: -$step1 + rem;
+}

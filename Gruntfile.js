@@ -18,7 +18,7 @@ module.exports = function(grunt) {
       },
       dist: {
         src: ['lib/<%= pkg.name %>.js'],
-        dest: 'dist/<%= pkg.name %>.js'
+        dest: 'dist/js/<%= pkg.name %>.js'
       }
     },
     uglify: {
@@ -27,11 +27,12 @@ module.exports = function(grunt) {
       },
       dist: {
         src: '<%= concat.dist.dest %>',
-        dest: 'dist/<%= pkg.name %>.min.js'
+        dest: 'dist/js/<%= pkg.name %>.min.js'
       }
     },
     jshint: {
       options: {
+        devel: true,
         curly: true,
         eqeqeq: true,
         immed: true,
@@ -52,11 +53,8 @@ module.exports = function(grunt) {
         src: 'Gruntfile.js'
       },
       lib_test: {
-        src: ['lib/**/*.js', 'test/**/*.js']
+        src: ['lib/**/*.js']
       }
-    },
-    qunit: {
-      files: ['test/**/*.html']
     },
     watch: {
       gruntfile: {
@@ -65,7 +63,69 @@ module.exports = function(grunt) {
       },
       lib_test: {
         files: '<%= jshint.lib_test.src %>',
-        tasks: ['jshint:lib_test', 'qunit']
+        tasks: ['jshint:lib_test']
+      },
+      sass: {
+        files: '**/*.scss',
+        tasks: ['sass:dev']
+      },
+      views: {
+        files: 'lib/html/**/*.{html,php}',
+        tasks: ['htmlmin:dist']
+      },
+      options: {
+          livereload: true
+        }
+    },
+    sass: {
+      dev: {
+        options: {
+          lineNumbers: true
+        },
+        files: [{
+          expand: true,
+          cwd: 'lib/scss',
+          src: '**/*.scss',
+          dest: 'lib/css',
+          ext: '.css'
+        }]
+      },
+      dist: {
+        options: {
+          banner: '<%= banner %>',
+          style: 'compressed'
+        },
+        files: [{
+          expand: true,
+          cwd: 'lib/scss',
+          src: '**/*.scss',
+          dest: 'dist/css',
+          ext: '.css'
+        }]
+      }
+    },
+    htmlmin: {
+      dist: {
+        options: {
+          collapseWhitespace: true,
+          removeComments: true
+        },
+        files: [{
+          expand: true,
+          cwd: 'lib/html',
+          src: ['**/*.html'],
+          dest: 'dist/html'
+        }]
+      }
+    },
+    imagemin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: 'lib/images',
+          src: ['**/*.{png,jpg,jpeg,gif}'],
+          dest: 'dist/images'
+        }]
       }
     }
   });
@@ -73,11 +133,13 @@ module.exports = function(grunt) {
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'imagemin:dist', 'sass:dist']);
 
 };

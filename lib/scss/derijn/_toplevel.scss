@@ -1,0 +1,43 @@
+
+html {
+	background: $grey url("../images/diagonales_decalees.png");
+	padding: 1rem 1rem 0;
+}
+body {
+	font-family: $bodyFont;
+}
+img {
+	display: block;
+}
+p img {
+	display: inline-block;
+}
+header {
+
+}
+nav {
+
+}
+div {
+
+}
+article {
+	margin-bottom: $base-spacing-unit;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $headerFont;
+}
+table {
+	background-color: $white;
+	margin-bottom: $step-2 + rem;
+		caption {
+			color: $white;
+			text-align: left;
+			font-size: $step2 + rem;
+			font-family: $headerFont;
+		}
+		td {
+			border: 1px solid $grey;
+			padding: $step-2 + rem;
+		}
+}

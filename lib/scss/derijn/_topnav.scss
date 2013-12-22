@@ -1,0 +1,31 @@
+.topnav {
+	li {
+		padding: $step1 + rem;
+		margin: $step3 + rem $step-1 + rem 0;
+		text-align: center;
+			&:hover, &.current-menu-item {
+				&:after {
+					display: block;
+					content: '';
+					position: relative;
+					right: 25%;
+					top: -100px;
+					height: 100px;
+					width: 150%;
+					background-color: $darkBlue;
+					z-index: -1;
+				}
+			}
+			&.current-menu-item:hover:after {
+				display: none;
+			}
+			a {
+				text-decoration: none;
+				color: $white;
+			}
+	}
+}
+
+#navWrap {
+	margin-bottom: -$step3 + rem;
+}

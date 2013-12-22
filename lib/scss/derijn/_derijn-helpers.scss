@@ -1,0 +1,48 @@
+.reltv {
+	position: relative;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: 0.8;
+	overflow-y: auto;
+	margin: 0;
+}
+.img-wrap img {
+	width: 100%;
+}
+
+.sidebar-item {
+	margin-bottom: $base-spacing-unit;
+}
+
+.page-footer article {
+	margin-bottom: 0;
+}
+
+.peeled {
+	position: relative;
+}
+
+.peeled:after, .peeled:before {
+	display: inline-block;
+	content: '';
+	position: absolute;
+	top: 80%;
+	right: 12px;
+	bottom: 18px;
+	width: 50%;
+	// background: #777;
+	-webkit-box-shadow: 0px 12px 8px 0px rgba(0, 0, 0, 0.68);
+	-moz-box-shadow: 0px 12px 8px 0px rgba(0, 0, 0, 0.68);
+	box-shadow: 0px 12px 8px 0px rgba(0, 0, 0, 0.68);
+	z-index: -1;
+	transform: rotate(3deg);
+}
+.peeled:before {
+	left: 12px;
+	transform: rotate(-3deg);
+}
