@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         stripBanners: true
       },
       dist: {
-        src: ['lib/<%= pkg.name %>.js'],
+        src: ['lib/js/<%= pkg.name %>.js'],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
     },
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
       },
       lib_test: {
         files: '<%= jshint.lib_test.src %>',
-        tasks: ['jshint:lib_test']
+        tasks: ['jshint:lib_test', 'concat', 'uglify']
       },
       sass: {
         files: '**/*.scss',

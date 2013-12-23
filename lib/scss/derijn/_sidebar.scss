@@ -8,5 +8,10 @@
 		padding: $step1 + rem;
 		line-height: $step2;
 		list-style: none;
+			li {
+				@extend .cf;
+				width: 100%;
+				border-bottom: 1px dotted $black;
+			}
 	}
 }

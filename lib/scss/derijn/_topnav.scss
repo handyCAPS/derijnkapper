@@ -9,8 +9,8 @@
 					content: '';
 					position: relative;
 					right: 25%;
-					top: -100px;
-					height: 100px;
+					top: -103px;
+					height: 103px;
 					width: 150%;
 					background-color: $darkBlue;
 					z-index: -1;
@@ -22,10 +22,11 @@
 			a {
 				text-decoration: none;
 				color: $white;
+				font-size: 1.2rem;
 			}
 	}
 }
 
 #navWrap {
-	margin-bottom: -$step3 + rem;
+	// margin-bottom: -$step1 + rem;
 }
