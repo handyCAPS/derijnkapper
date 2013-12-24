@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         stripBanners: true
       },
       dist: {
-        src: ['lib/js/<%= pkg.name %>.js'],
+        src: ['bower_components/owlcarousel/owl-carousel/owl.carousel.js','lib/js/<%= pkg.name %>.js'],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
     },

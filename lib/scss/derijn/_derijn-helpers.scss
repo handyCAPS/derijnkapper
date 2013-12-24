@@ -55,6 +55,7 @@
 	float: right;
 }
 
-.dots {
-	border-bottom: 2px dotted $black;
+.blue-back {
+	background-color: $darkBlue;
+	padding: $step1 + rem;
 }
