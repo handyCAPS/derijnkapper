@@ -390,7 +390,7 @@
 /*
  * Correct `block` display not defined in IE 8/9.
  */
-/* line 22, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 22, ../scss/inuit.css/generic/_normalize.scss */
 article,
 aside,
 details,
@@ -408,7 +408,7 @@ summary {
 /*
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 32, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 32, ../scss/inuit.css/generic/_normalize.scss */
 audio,
 canvas,
 video {
@@ -418,7 +418,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 41, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 41, ../scss/inuit.css/generic/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -426,7 +426,7 @@ audio:not([controls]) {
 /*
  * Address styling not present in IE 8/9.
  */
-/* line 50, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 50, ../scss/inuit.css/generic/_normalize.scss */
 [hidden] {
   display: none; }
 
@@ -438,7 +438,7 @@ audio:not([controls]) {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 64, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 64, ../scss/inuit.css/generic/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -450,7 +450,7 @@ html {
 /*
  * Remove default margin.
  */
-/* line 74, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 74, ../scss/inuit.css/generic/_normalize.scss */
 body {
   margin: 0; }
 
@@ -460,14 +460,14 @@ body {
 /*
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 86, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 86, ../scss/inuit.css/generic/_normalize.scss */
 a:focus {
   outline: thin dotted; }
 
 /*
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 95, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 95, ../scss/inuit.css/generic/_normalize.scss */
 a:active,
 a:hover {
   outline: 0; }
@@ -479,7 +479,7 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 108, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 108, ../scss/inuit.css/generic/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -487,14 +487,14 @@ h1 {
 /*
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 117, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 117, ../scss/inuit.css/generic/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted; }
 
 /*
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 126, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 126, ../scss/inuit.css/generic/_normalize.scss */
 b,
 strong {
   font-weight: bold; }
@@ -502,14 +502,14 @@ strong {
 /*
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 134, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 134, ../scss/inuit.css/generic/_normalize.scss */
 dfn {
   font-style: italic; }
 
 /*
  * Address differences between Firefox and other browsers.
  */
-/* line 142, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 142, ../scss/inuit.css/generic/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -518,7 +518,7 @@ hr {
 /*
  * Address styling not present in IE 8/9.
  */
-/* line 152, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 152, ../scss/inuit.css/generic/_normalize.scss */
 mark {
   background: #ff0;
   color: #000; }
@@ -526,7 +526,7 @@ mark {
 /*
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 164, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 164, ../scss/inuit.css/generic/_normalize.scss */
 code,
 kbd,
 pre,
@@ -537,28 +537,28 @@ samp {
 /*
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 173, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 173, ../scss/inuit.css/generic/_normalize.scss */
 pre {
   white-space: pre-wrap; }
 
 /*
  * Set consistent quote types.
  */
-/* line 181, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 181, ../scss/inuit.css/generic/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019"; }
 
 /*
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 189, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 189, ../scss/inuit.css/generic/_normalize.scss */
 small {
   font-size: 80%; }
 
 /*
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 198, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 198, ../scss/inuit.css/generic/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -566,11 +566,11 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
-/* line 205, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 205, ../scss/inuit.css/generic/_normalize.scss */
 sup {
   top: -0.5em; }
 
-/* line 209, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 209, ../scss/inuit.css/generic/_normalize.scss */
 sub {
   bottom: -0.25em; }
 
@@ -580,14 +580,14 @@ sub {
 /*
  * Remove border when inside `a` element in IE 8/9.
  */
-/* line 221, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 221, ../scss/inuit.css/generic/_normalize.scss */
 img {
   border: 0; }
 
 /*
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 229, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 229, ../scss/inuit.css/generic/_normalize.scss */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -597,7 +597,7 @@ svg:not(:root) {
 /*
  * Address margin not present in IE 8/9 and Safari 5.
  */
-/* line 241, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 241, ../scss/inuit.css/generic/_normalize.scss */
 figure {
   margin: 0; }
 
@@ -607,9 +607,9 @@ figure {
 /*
  * Define consistent border, margin, and padding.
  */
-/* line 253, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 253, ../scss/inuit.css/generic/_normalize.scss */
 fieldset {
-  border: 1px solid silver;
+  border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em; }
 
@@ -617,7 +617,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 264, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 264, ../scss/inuit.css/generic/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -629,7 +629,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 278, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 278, ../scss/inuit.css/generic/_normalize.scss */
 button,
 input,
 select,
@@ -645,7 +645,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 290, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 290, ../scss/inuit.css/generic/_normalize.scss */
 button,
 input {
   line-height: normal; }
@@ -656,7 +656,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 302, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 302, ../scss/inuit.css/generic/_normalize.scss */
 button,
 select {
   text-transform: none; }
@@ -668,7 +668,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 317, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 317, ../scss/inuit.css/generic/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -681,7 +681,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-/* line 327, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 327, ../scss/inuit.css/generic/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default; }
@@ -690,7 +690,7 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-/* line 337, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 337, ../scss/inuit.css/generic/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -703,7 +703,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 348, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 348, ../scss/inuit.css/generic/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -716,7 +716,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 361, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 361, ../scss/inuit.css/generic/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
@@ -724,7 +724,7 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 370, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 370, ../scss/inuit.css/generic/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -734,7 +734,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 380, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 380, ../scss/inuit.css/generic/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -747,7 +747,7 @@ textarea {
 /*
  * Remove most spacing between table cells.
  */
-/* line 393, lib/scss/inuit.css/generic/_normalize.scss */
+/* line 393, ../scss/inuit.css/generic/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -762,7 +762,7 @@ table {
 /**
 * LetÔÇÖs make the box model all nice, shall we...?
 */
-/* line 16, lib/scss/inuit.css/generic/_reset.scss */
+/* line 16, ../scss/inuit.css/generic/_reset.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -773,7 +773,7 @@ table {
 /**
  * The usual...
  */
-/* line 30, lib/scss/inuit.css/generic/_reset.scss */
+/* line 30, ../scss/inuit.css/generic/_reset.scss */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 dl, dd, ol, ul,
@@ -786,35 +786,35 @@ hr {
 /**
  * Give a help cursor to elements that give extra info on `:hover`.
  */
-/* line 38, lib/scss/inuit.css/generic/_reset.scss */
+/* line 38, ../scss/inuit.css/generic/_reset.scss */
 abbr[title], dfn[title] {
   cursor: help; }
 
 /**
  * Remove underlines from potentially troublesome elements.
  */
-/* line 45, lib/scss/inuit.css/generic/_reset.scss */
+/* line 45, ../scss/inuit.css/generic/_reset.scss */
 u, ins {
   text-decoration: none; }
 
 /**
  * Apply faux underline via `border-bottom`.
  */
-/* line 52, lib/scss/inuit.css/generic/_reset.scss */
+/* line 52, ../scss/inuit.css/generic/_reset.scss */
 ins {
   border-bottom: 1px solid; }
 
 /**
  * So that `alt` text is visually offset if images donÔÇÖt load.
  */
-/* line 59, lib/scss/inuit.css/generic/_reset.scss */
+/* line 59, ../scss/inuit.css/generic/_reset.scss */
 img {
   font-style: italic; }
 
 /**
  * Give form elements some cursor interactions...
  */
-/* line 71, lib/scss/inuit.css/generic/_reset.scss */
+/* line 71, ../scss/inuit.css/generic/_reset.scss */
 label,
 input,
 textarea,
@@ -823,7 +823,7 @@ select,
 option {
   cursor: pointer; }
 
-/* line 77, lib/scss/inuit.css/generic/_reset.scss */
+/* line 77, ../scss/inuit.css/generic/_reset.scss */
 .text-input:active,
 .text-input:focus,
 textarea:active,
@@ -839,7 +839,7 @@ textarea:focus {
  * Extend the clearfix class with Sass to avoid the `.cf` class appearing over
  * and over in your markup.
  */
-/* line 10, lib/scss/inuit.css/generic/_clearfix.scss */
+/* line 10, ../scss/inuit.css/generic/_clearfix.scss */
 .cf:after, .nav:after, .sidebar-item ul li:after {
   content: "";
   display: table;
@@ -856,7 +856,7 @@ textarea:focus {
 /**
  * Base elements
  */
-/* line 24, lib/scss/inuit.css/generic/_shared.scss */
+/* line 24, ../scss/inuit.css/generic/_shared.scss */
 h1, h2, h3, h4, h5, h6, hgroup,
 ul, ol, dl,
 blockquote, p, address,
@@ -869,7 +869,7 @@ pre,
 .islet {
   margin-bottom: 24px;
   margin-bottom: 1.5rem; }
-  /* line 28, lib/scss/inuit.css/generic/_shared.scss */
+  /* line 28, ../scss/inuit.css/generic/_shared.scss */
   .islet h1, .islet h2, .islet h3, .islet h4, .islet h5, .islet h6, .islet hgroup, .islet
   ul, .islet ol, .islet dl, .islet
   blockquote, .islet p, .islet address, .islet
@@ -885,7 +885,7 @@ pre,
 /**
  * Doubled up `margin-bottom` helper class.
  */
-/* line 38, lib/scss/inuit.css/generic/_shared.scss */
+/* line 38, ../scss/inuit.css/generic/_shared.scss */
 .landmark {
   margin-bottom: 48px;
   margin-bottom: 3rem; }
@@ -894,7 +894,7 @@ pre,
  * `hr` elements only take up a few pixels, so we need to give them special
  * treatment regarding vertical rhythm.
  */
-/* line 48, lib/scss/inuit.css/generic/_shared.scss */
+/* line 48, ../scss/inuit.css/generic/_shared.scss */
 hr {
   margin-bottom: 22px;
   margin-bottom: 1.375rem; }
@@ -903,7 +903,7 @@ hr {
  * Where `margin-left` is concerned we want to try and indent certain elements
  * by a consistent amount. Define that amount once, here.
  */
-/* line 58, lib/scss/inuit.css/generic/_shared.scss */
+/* line 58, ../scss/inuit.css/generic/_shared.scss */
 ul, ol, dd {
   margin-left: 48px;
   margin-left: 3rem; }
@@ -914,7 +914,7 @@ ul, ol, dd {
 /*------------------------------------*\
     $MAIN
 \*------------------------------------*/
-/* line 4, lib/scss/inuit.css/base/_main.scss */
+/* line 4, ../scss/inuit.css/base/_main.scss */
 html {
   font: 1em/1.5 sans-serif;
   overflow-y: scroll;
@@ -930,37 +930,37 @@ html {
  * This allows us to apply, say, `class=alpha` to a `h3`; a double-stranded
  * heading hierarchy.
  */
-/* line 11, lib/scss/inuit.css/base/_headings.scss */
+/* line 11, ../scss/inuit.css/base/_headings.scss */
 h1, .alpha {
   font-size: 36px;
   font-size: 2.25rem;
   line-height: 1.33333; }
 
-/* line 14, lib/scss/inuit.css/base/_headings.scss */
+/* line 14, ../scss/inuit.css/base/_headings.scss */
 h2, .beta {
   font-size: 30px;
   font-size: 1.875rem;
   line-height: 1.6; }
 
-/* line 17, lib/scss/inuit.css/base/_headings.scss */
+/* line 17, ../scss/inuit.css/base/_headings.scss */
 h3, .gamma {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 1; }
 
-/* line 20, lib/scss/inuit.css/base/_headings.scss */
+/* line 20, ../scss/inuit.css/base/_headings.scss */
 h4, .delta {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.2; }
 
-/* line 23, lib/scss/inuit.css/base/_headings.scss */
+/* line 23, ../scss/inuit.css/base/_headings.scss */
 h5, .epsilon {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
-/* line 26, lib/scss/inuit.css/base/_headings.scss */
+/* line 26, ../scss/inuit.css/base/_headings.scss */
 h6, .zeta {
   font-size: 14px;
   font-size: 0.875rem;
@@ -976,7 +976,7 @@ h6, .zeta {
    </hgroup>
  *
  */
-/* line 43, lib/scss/inuit.css/base/_headings.scss */
+/* line 43, ../scss/inuit.css/base/_headings.scss */
 hgroup .hN {
   margin-bottom: 0; }
 
@@ -984,19 +984,19 @@ hgroup .hN {
  * A series of classes for setting massive type; for use in heroes, mastheads,
  * promos, etc.
  */
-/* line 52, lib/scss/inuit.css/base/_headings.scss */
+/* line 52, ../scss/inuit.css/base/_headings.scss */
 .giga {
   font-size: 96px;
   font-size: 6rem;
   line-height: 1; }
 
-/* line 55, lib/scss/inuit.css/base/_headings.scss */
+/* line 55, ../scss/inuit.css/base/_headings.scss */
 .mega {
   font-size: 72px;
   font-size: 4.5rem;
   line-height: 1; }
 
-/* line 58, lib/scss/inuit.css/base/_headings.scss */
+/* line 58, ../scss/inuit.css/base/_headings.scss */
 .kilo {
   font-size: 48px;
   font-size: 3rem;
@@ -1009,7 +1009,7 @@ hgroup .hN {
  * The `.lede` class is used to make the introductory text (usually a paragraph)
  * of a document slightly larger.
  */
-/* line 9, lib/scss/inuit.css/base/_paragraphs.scss */
+/* line 9, ../scss/inuit.css/base/_paragraphs.scss */
 .lede,
 .lead {
   font-size: 18px;
@@ -1022,14 +1022,14 @@ hgroup .hN {
 /**
  * A series of classes for setting tiny type; for use in smallprint etc.
  */
-/* line 8, lib/scss/inuit.css/base/_smallprint.scss */
+/* line 8, ../scss/inuit.css/base/_smallprint.scss */
 .smallprint,
 .milli {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 2; }
 
-/* line 11, lib/scss/inuit.css/base/_smallprint.scss */
+/* line 11, ../scss/inuit.css/base/_smallprint.scss */
 .micro {
   font-size: 10px;
   font-size: 0.625rem;
@@ -1047,46 +1047,46 @@ hgroup .hN {
 /**
  * Inline quotes.
  */
-/* line 20, lib/scss/inuit.css/base/_quotes.scss */
+/* line 20, ../scss/inuit.css/base/_quotes.scss */
 q {
   quotes: "\2018" "\2019" "\201C" "\201D"; }
-  /* line 23, lib/scss/inuit.css/base/_quotes.scss */
+  /* line 23, ../scss/inuit.css/base/_quotes.scss */
   q:before {
     content: "\2018";
     content: open-quote; }
-  /* line 27, lib/scss/inuit.css/base/_quotes.scss */
+  /* line 27, ../scss/inuit.css/base/_quotes.scss */
   q:after {
     content: "\2019";
     content: close-quote; }
-  /* line 32, lib/scss/inuit.css/base/_quotes.scss */
+  /* line 32, ../scss/inuit.css/base/_quotes.scss */
   q q:before {
     content: "\201C";
     content: open-quote; }
-  /* line 36, lib/scss/inuit.css/base/_quotes.scss */
+  /* line 36, ../scss/inuit.css/base/_quotes.scss */
   q q:after {
     content: "\201D";
     content: close-quote; }
 
-/* line 42, lib/scss/inuit.css/base/_quotes.scss */
+/* line 42, ../scss/inuit.css/base/_quotes.scss */
 blockquote {
   quotes: "\201C" "\201D"; }
-  /* line 45, lib/scss/inuit.css/base/_quotes.scss */
+  /* line 45, ../scss/inuit.css/base/_quotes.scss */
   blockquote p:before {
     content: "\201C";
     content: open-quote; }
-  /* line 49, lib/scss/inuit.css/base/_quotes.scss */
+  /* line 49, ../scss/inuit.css/base/_quotes.scss */
   blockquote p:after {
     content: "";
     content: no-close-quote; }
-  /* line 53, lib/scss/inuit.css/base/_quotes.scss */
+  /* line 53, ../scss/inuit.css/base/_quotes.scss */
   blockquote p:last-of-type:after {
     content: "\201D";
     content: close-quote; }
-  /* line 58, lib/scss/inuit.css/base/_quotes.scss */
+  /* line 58, ../scss/inuit.css/base/_quotes.scss */
   blockquote q:before {
     content: "\2018";
     content: open-quote; }
-  /* line 62, lib/scss/inuit.css/base/_quotes.scss */
+  /* line 62, ../scss/inuit.css/base/_quotes.scss */
   blockquote q:after {
     content: "\2019";
     content: close-quote; }
@@ -1100,21 +1100,21 @@ blockquote {
    </blockquote>
  *
  */
-/* line 78, lib/scss/inuit.css/base/_quotes.scss */
+/* line 78, ../scss/inuit.css/base/_quotes.scss */
 blockquote {
   /**
    * .4em is roughly equal to the width of the opening ÔÇ£ that we wish to hang.
    */
   text-indent: -0.41em; }
-  /* line 84, lib/scss/inuit.css/base/_quotes.scss */
+  /* line 84, ../scss/inuit.css/base/_quotes.scss */
   blockquote p:last-of-type {
     margin-bottom: 0; }
 
-/* line 89, lib/scss/inuit.css/base/_quotes.scss */
+/* line 89, ../scss/inuit.css/base/_quotes.scss */
 .source {
   display: block;
   text-indent: 0; }
-  /* line 93, lib/scss/inuit.css/base/_quotes.scss */
+  /* line 93, ../scss/inuit.css/base/_quotes.scss */
   .source:before {
     content: "\2014"; }
 
@@ -1124,11 +1124,11 @@ blockquote {
 /**
  * Use an explicit font stack to ensure browsers render correct `line-height`.
  */
-/* line 7, lib/scss/inuit.css/base/_code.scss */
+/* line 7, ../scss/inuit.css/base/_code.scss */
 pre {
   overflow: auto; }
 
-/* line 10, lib/scss/inuit.css/base/_code.scss */
+/* line 10, ../scss/inuit.css/base/_code.scss */
 pre mark {
   background: none;
   border-bottom: 1px solid;
@@ -1140,7 +1140,7 @@ pre mark {
    <code>&lt;/div&gt;<span class=code-comment>&lt;!-- /wrapper --&gt;</span></code>
  *
  */
-/* line 23, lib/scss/inuit.css/base/_code.scss */
+/* line 23, ../scss/inuit.css/base/_code.scss */
 .code-comment {
   /**
    * Override this setting in your theme stylesheet
@@ -1170,7 +1170,7 @@ pre mark {
  * 3. Make sure lines of code donÔÇÖt wrap.
  * 4. Give the code form by forcing the `code` to honour white-space.
  */
-/* line 54, lib/scss/inuit.css/base/_code.scss */
+/* line 54, ../scss/inuit.css/base/_code.scss */
 .line-numbers {
   font-family: monospace, serif;
   /* [1] */
@@ -1182,7 +1182,7 @@ pre mark {
   /* [3] */
   margin-left: 0; }
 
-/* line 61, lib/scss/inuit.css/base/_code.scss */
+/* line 61, ../scss/inuit.css/base/_code.scss */
 .line-numbers code {
   white-space: pre;
   /* [4] */ }
@@ -1196,14 +1196,14 @@ pre mark {
 /**
  * Fluid images.
  */
-/* line 10, lib/scss/inuit.css/base/_images.scss */
+/* line 10, ../scss/inuit.css/base/_images.scss */
 img {
   max-width: 100%; }
 
 /**
  * Non-fluid images if you specify `width` and/or `height` attributes.
  */
-/* line 19, lib/scss/inuit.css/base/_images.scss */
+/* line 19, ../scss/inuit.css/base/_images.scss */
 img[width],
 img[height] {
   max-width: none; }
@@ -1211,26 +1211,26 @@ img[height] {
 /**
  * Rounded images.
  */
-/* line 27, lib/scss/inuit.css/base/_images.scss */
+/* line 27, ../scss/inuit.css/base/_images.scss */
 .img--round {
   border-radius: 4px; }
 
 /**
  * Image placement variations.
  */
-/* line 33, lib/scss/inuit.css/base/_images.scss */
+/* line 33, ../scss/inuit.css/base/_images.scss */
 .img--right {
   float: right;
   margin-bottom: 24px;
   margin-left: 24px; }
 
-/* line 38, lib/scss/inuit.css/base/_images.scss */
+/* line 38, ../scss/inuit.css/base/_images.scss */
 .img--left {
   float: left;
   margin-right: 24px;
   margin-bottom: 24px; }
 
-/* line 43, lib/scss/inuit.css/base/_images.scss */
+/* line 43, ../scss/inuit.css/base/_images.scss */
 .img--center {
   display: block;
   margin-right: auto;
@@ -1243,22 +1243,22 @@ img[height] {
  * Please note, these will not work too nicely with fluid images and will
  * distort when resized below a certain width. Use with caution.
  */
-/* line 57, lib/scss/inuit.css/base/_images.scss */
+/* line 57, ../scss/inuit.css/base/_images.scss */
 .img--short {
   height: 120px; }
 
-/* line 60, lib/scss/inuit.css/base/_images.scss */
+/* line 60, ../scss/inuit.css/base/_images.scss */
 .img--medium {
   height: 240px; }
 
-/* line 63, lib/scss/inuit.css/base/_images.scss */
+/* line 63, ../scss/inuit.css/base/_images.scss */
 .img--tall {
   height: 360px; }
 
 /**
  * Images in `figure` elements.
  */
-/* line 71, lib/scss/inuit.css/base/_images.scss */
+/* line 71, ../scss/inuit.css/base/_images.scss */
 figure > img {
   display: block; }
 
@@ -1268,7 +1268,7 @@ figure > img {
 /**
  * Remove vertical spacing from nested lists.
  */
-/* line 9, lib/scss/inuit.css/base/_lists.scss */
+/* line 9, ../scss/inuit.css/base/_lists.scss */
 li > ul,
 li > ol {
   margin-bottom: 0; }
@@ -1277,7 +1277,7 @@ li > ol {
  * Have a numbered `ul` without the semantics implied by using an `ol`.
  */
 /*ul*/
-/* line 17, lib/scss/inuit.css/base/_lists.scss */
+/* line 17, ../scss/inuit.css/base/_lists.scss */
 .numbered-list {
   list-style-type: decimal; }
 
@@ -1338,17 +1338,17 @@ li > ol {
    </table>
  *
  */
-/* line 58, lib/scss/inuit.css/base/_tables.scss */
+/* line 58, ../scss/inuit.css/base/_tables.scss */
 table {
   width: 100%; }
 
-/* line 62, lib/scss/inuit.css/base/_tables.scss */
+/* line 62, ../scss/inuit.css/base/_tables.scss */
 th,
 td {
   padding: 6px;
   text-align: left; }
   @media screen and (min-width: 480px) {
-    /* line 62, lib/scss/inuit.css/base/_tables.scss */
+    /* line 62, ../scss/inuit.css/base/_tables.scss */
     th,
     td {
       padding: 12px; } }
@@ -1356,23 +1356,23 @@ td {
 /**
  * Cell alignments
  */
-/* line 74, lib/scss/inuit.css/base/_tables.scss */
+/* line 74, ../scss/inuit.css/base/_tables.scss */
 [colspan] {
   text-align: center; }
 
-/* line 77, lib/scss/inuit.css/base/_tables.scss */
+/* line 77, ../scss/inuit.css/base/_tables.scss */
 [colspan="1"] {
   text-align: left; }
 
-/* line 80, lib/scss/inuit.css/base/_tables.scss */
+/* line 80, ../scss/inuit.css/base/_tables.scss */
 [rowspan] {
   vertical-align: middle; }
 
-/* line 83, lib/scss/inuit.css/base/_tables.scss */
+/* line 83, ../scss/inuit.css/base/_tables.scss */
 [rowspan="1"] {
   vertical-align: top; }
 
-/* line 86, lib/scss/inuit.css/base/_tables.scss */
+/* line 86, ../scss/inuit.css/base/_tables.scss */
 .numerical {
   text-align: right; }
 
@@ -1382,137 +1382,137 @@ td {
  * class so that column can soak up the effects of any accidental breakage in
  * the table.
  */
-/* line 96, lib/scss/inuit.css/base/_tables.scss */
+/* line 96, ../scss/inuit.css/base/_tables.scss */
 .t5 {
   width: 5%; }
 
-/* line 97, lib/scss/inuit.css/base/_tables.scss */
+/* line 97, ../scss/inuit.css/base/_tables.scss */
 .t10 {
   width: 10%; }
 
-/* line 98, lib/scss/inuit.css/base/_tables.scss */
+/* line 98, ../scss/inuit.css/base/_tables.scss */
 .t12 {
   width: 12.5%; }
 
 /* 1/8 */
-/* line 99, lib/scss/inuit.css/base/_tables.scss */
+/* line 99, ../scss/inuit.css/base/_tables.scss */
 .t15 {
   width: 15%; }
 
-/* line 100, lib/scss/inuit.css/base/_tables.scss */
+/* line 100, ../scss/inuit.css/base/_tables.scss */
 .t20 {
   width: 20%; }
 
-/* line 101, lib/scss/inuit.css/base/_tables.scss */
+/* line 101, ../scss/inuit.css/base/_tables.scss */
 .t25 {
   width: 25%; }
 
 /* 1/4 */
-/* line 102, lib/scss/inuit.css/base/_tables.scss */
+/* line 102, ../scss/inuit.css/base/_tables.scss */
 .t30 {
   width: 30%; }
 
-/* line 103, lib/scss/inuit.css/base/_tables.scss */
+/* line 103, ../scss/inuit.css/base/_tables.scss */
 .t33 {
   width: 33.333%; }
 
 /* 1/3 */
-/* line 104, lib/scss/inuit.css/base/_tables.scss */
+/* line 104, ../scss/inuit.css/base/_tables.scss */
 .t35 {
   width: 35%; }
 
-/* line 105, lib/scss/inuit.css/base/_tables.scss */
+/* line 105, ../scss/inuit.css/base/_tables.scss */
 .t37 {
   width: 37.5%; }
 
 /* 3/8 */
-/* line 106, lib/scss/inuit.css/base/_tables.scss */
+/* line 106, ../scss/inuit.css/base/_tables.scss */
 .t40 {
   width: 40%; }
 
-/* line 107, lib/scss/inuit.css/base/_tables.scss */
+/* line 107, ../scss/inuit.css/base/_tables.scss */
 .t45 {
   width: 45%; }
 
-/* line 108, lib/scss/inuit.css/base/_tables.scss */
+/* line 108, ../scss/inuit.css/base/_tables.scss */
 .t50 {
   width: 50%; }
 
 /* 1/2 */
-/* line 109, lib/scss/inuit.css/base/_tables.scss */
+/* line 109, ../scss/inuit.css/base/_tables.scss */
 .t55 {
   width: 55%; }
 
-/* line 110, lib/scss/inuit.css/base/_tables.scss */
+/* line 110, ../scss/inuit.css/base/_tables.scss */
 .t60 {
   width: 60%; }
 
-/* line 111, lib/scss/inuit.css/base/_tables.scss */
+/* line 111, ../scss/inuit.css/base/_tables.scss */
 .t62 {
   width: 62.5%; }
 
 /* 5/8 */
-/* line 112, lib/scss/inuit.css/base/_tables.scss */
+/* line 112, ../scss/inuit.css/base/_tables.scss */
 .t65 {
   width: 65%; }
 
-/* line 113, lib/scss/inuit.css/base/_tables.scss */
+/* line 113, ../scss/inuit.css/base/_tables.scss */
 .t66 {
   width: 66.666%; }
 
 /* 2/3 */
-/* line 114, lib/scss/inuit.css/base/_tables.scss */
+/* line 114, ../scss/inuit.css/base/_tables.scss */
 .t70 {
   width: 70%; }
 
-/* line 115, lib/scss/inuit.css/base/_tables.scss */
+/* line 115, ../scss/inuit.css/base/_tables.scss */
 .t75 {
   width: 75%; }
 
 /* 3/4*/
-/* line 116, lib/scss/inuit.css/base/_tables.scss */
+/* line 116, ../scss/inuit.css/base/_tables.scss */
 .t80 {
   width: 80%; }
 
-/* line 117, lib/scss/inuit.css/base/_tables.scss */
+/* line 117, ../scss/inuit.css/base/_tables.scss */
 .t85 {
   width: 85%; }
 
-/* line 118, lib/scss/inuit.css/base/_tables.scss */
+/* line 118, ../scss/inuit.css/base/_tables.scss */
 .t87 {
   width: 87.5%; }
 
 /* 7/8 */
-/* line 119, lib/scss/inuit.css/base/_tables.scss */
+/* line 119, ../scss/inuit.css/base/_tables.scss */
 .t90 {
   width: 90%; }
 
-/* line 120, lib/scss/inuit.css/base/_tables.scss */
+/* line 120, ../scss/inuit.css/base/_tables.scss */
 .t95 {
   width: 95%; }
 
 /**
  * Bordered tables
  */
-/* line 129, lib/scss/inuit.css/base/_tables.scss */
+/* line 129, ../scss/inuit.css/base/_tables.scss */
 .table--bordered th,
 .table--bordered td {
   border: 1px solid #cccccc; }
-  /* line 132, lib/scss/inuit.css/base/_tables.scss */
+  /* line 132, ../scss/inuit.css/base/_tables.scss */
   .table--bordered th:empty,
   .table--bordered td:empty {
     border: none; }
-/* line 137, lib/scss/inuit.css/base/_tables.scss */
+/* line 137, ../scss/inuit.css/base/_tables.scss */
 .table--bordered thead tr:last-child th {
   border-bottom-width: 2px; }
-/* line 141, lib/scss/inuit.css/base/_tables.scss */
+/* line 141, ../scss/inuit.css/base/_tables.scss */
 .table--bordered tbody tr th:last-of-type {
   border-right-width: 2px; }
 
 /**
  * Striped tables
  */
-/* line 152, lib/scss/inuit.css/base/_tables.scss */
+/* line 152, ../scss/inuit.css/base/_tables.scss */
 .table--striped tbody tr:nth-of-type(odd) {
   background-color: #ffc;
   /* Override this color in your theme stylesheet */ }
@@ -1520,7 +1520,7 @@ td {
 /**
  * Data table
  */
-/* line 161, lib/scss/inuit.css/base/_tables.scss */
+/* line 161, ../scss/inuit.css/base/_tables.scss */
 .table--data {
   font: 12px/1.5 sans-serif; }
 
@@ -1532,7 +1532,7 @@ td {
  * Demo: jsfiddle.net/inuitcss/MhHHU
  *
  */
-/* line 9, lib/scss/inuit.css/base/_forms.scss */
+/* line 9, ../scss/inuit.css/base/_forms.scss */
 fieldset {
   padding: 24px; }
 
@@ -1546,7 +1546,7 @@ fieldset {
    <input type=password class=text-input>
  *
  */
-/* line 25, lib/scss/inuit.css/base/_forms.scss */
+/* line 25, ../scss/inuit.css/base/_forms.scss */
 .text-input,
 textarea {
   /**
@@ -1572,12 +1572,12 @@ textarea {
    </ul>
  *
  */
-/* line 51, lib/scss/inuit.css/base/_forms.scss */
+/* line 51, ../scss/inuit.css/base/_forms.scss */
 .form-fields {
   list-style: none;
   margin: 0; }
 
-/* line 58, lib/scss/inuit.css/base/_forms.scss */
+/* line 58, ../scss/inuit.css/base/_forms.scss */
 .form-fields > li:last-child {
   margin-bottom: 0; }
 
@@ -1607,7 +1607,7 @@ textarea {
    </li>
  *
  */
-/* line 90, lib/scss/inuit.css/base/_forms.scss */
+/* line 90, ../scss/inuit.css/base/_forms.scss */
 label,
 .label {
   display: block; }
@@ -1618,7 +1618,7 @@ label,
    <label>Card number <small class=additional>No spaces</small></label>
  *
  */
-/* line 99, lib/scss/inuit.css/base/_forms.scss */
+/* line 99, ../scss/inuit.css/base/_forms.scss */
 .additional {
   display: block;
   font-weight: normal; }
@@ -1638,7 +1638,7 @@ label,
    </li>
  *
  */
-/* line 120, lib/scss/inuit.css/base/_forms.scss */
+/* line 120, ../scss/inuit.css/base/_forms.scss */
 .check-list {
   list-style: none;
   margin: 0; }
@@ -1646,7 +1646,7 @@ label,
 /*
  * Labels in check-lists
  */
-/* line 129, lib/scss/inuit.css/base/_forms.scss */
+/* line 129, ../scss/inuit.css/base/_forms.scss */
 .check-label,
 .check-list label,
 .check-list .label {
@@ -1667,7 +1667,7 @@ label,
    </li>
  *
  */
-/* line 149, lib/scss/inuit.css/base/_forms.scss */
+/* line 149, ../scss/inuit.css/base/_forms.scss */
 .spoken-form label {
   display: inline-block;
   font: inherit; }
@@ -1685,12 +1685,12 @@ label,
  *
  */
 /*small*/
-/* line 167, lib/scss/inuit.css/base/_forms.scss */
+/* line 167, ../scss/inuit.css/base/_forms.scss */
 .extra-help {
   display: inline-block;
   visibility: hidden; }
 
-/* line 172, lib/scss/inuit.css/base/_forms.scss */
+/* line 172, ../scss/inuit.css/base/_forms.scss */
 .text-input:active + .extra-help,
 .text-input:focus + .extra-help {
   visibility: visible; }
@@ -1734,7 +1734,7 @@ label,
 /**
  * Grid wrapper
  */
-/* line 41, lib/scss/inuit.css/objects/_grids.scss */
+/* line 41, ../scss/inuit.css/objects/_grids.scss */
 .grid {
   margin-left: -24px;
   list-style: none;
@@ -1743,14 +1743,14 @@ label,
 /**
  * Very infrequently occuring grid wrappers as children of grid wrappers.
  */
-/* line 51, lib/scss/inuit.css/objects/_grids.scss */
+/* line 51, ../scss/inuit.css/objects/_grids.scss */
 .grid > .grid {
   margin-left: 0; }
 
 /**
  * Grid
  */
-/* line 59, lib/scss/inuit.css/objects/_grids.scss */
+/* line 59, ../scss/inuit.css/objects/_grids.scss */
 .grid__item {
   display: inline-block;
   width: 100%;
@@ -1775,11 +1775,11 @@ label,
  * Demo: jsfiddle.net/inuitcss/Vnph4
  *
  */
-/* line 21, lib/scss/inuit.css/objects/_nav.scss */
+/* line 21, ../scss/inuit.css/objects/_nav.scss */
 .nav {
   list-style: none;
   margin-left: 0; }
-  /* line 29, lib/scss/inuit.css/objects/_nav.scss */
+  /* line 29, ../scss/inuit.css/objects/_nav.scss */
   .nav > li,
   .nav > li > a {
     display: inline-block;
@@ -1797,10 +1797,10 @@ label,
    </ul>
  *
  */
-/* line 51, lib/scss/inuit.css/objects/_nav.scss */
+/* line 51, ../scss/inuit.css/objects/_nav.scss */
 .nav--stacked > li {
   display: list-item; }
-  /* line 54, lib/scss/inuit.css/objects/_nav.scss */
+  /* line 54, ../scss/inuit.css/objects/_nav.scss */
   .nav--stacked > li > a {
     display: block; }
 
@@ -1815,7 +1815,7 @@ label,
    </ul>
  *
  */
-/* line 72, lib/scss/inuit.css/objects/_nav.scss */
+/* line 72, ../scss/inuit.css/objects/_nav.scss */
 .nav--banner {
   text-align: center; }
 
@@ -1830,7 +1830,7 @@ label,
    </ul>
  *
  */
-/* line 88, lib/scss/inuit.css/objects/_nav.scss */
+/* line 88, ../scss/inuit.css/objects/_nav.scss */
 .nav--block {
   line-height: 1;
   /**
@@ -1839,11 +1839,11 @@ label,
   letter-spacing: -0.31em;
   word-spacing: -0.43em;
   white-space: nowrap; }
-  /* line 97, lib/scss/inuit.css/objects/_nav.scss */
+  /* line 97, ../scss/inuit.css/objects/_nav.scss */
   .nav--block > li {
     letter-spacing: normal;
     word-spacing: normal; }
-    /* line 101, lib/scss/inuit.css/objects/_nav.scss */
+    /* line 101, ../scss/inuit.css/objects/_nav.scss */
     .nav--block > li > a {
       padding: 12px; }
 
@@ -1860,14 +1860,14 @@ label,
  *
  * Thanks to @pimpl for this idea!
  */
-/* line 121, lib/scss/inuit.css/objects/_nav.scss */
+/* line 121, ../scss/inuit.css/objects/_nav.scss */
 .nav--fit {
   display: table;
   width: 100%; }
-  /* line 125, lib/scss/inuit.css/objects/_nav.scss */
+  /* line 125, ../scss/inuit.css/objects/_nav.scss */
   .nav--fit > li {
     display: table-cell; }
-    /* line 128, lib/scss/inuit.css/objects/_nav.scss */
+    /* line 128, ../scss/inuit.css/objects/_nav.scss */
     .nav--fit > li > a {
       display: block; }
 
@@ -1877,10 +1877,10 @@ label,
    `<ul class="nav  nav--keywords>`
  *
  */
-/* line 145, lib/scss/inuit.css/objects/_nav.scss */
+/* line 145, ../scss/inuit.css/objects/_nav.scss */
 .nav--keywords > li:after {
   content: "\002C" "\00A0"; }
-/* line 149, lib/scss/inuit.css/objects/_nav.scss */
+/* line 149, ../scss/inuit.css/objects/_nav.scss */
 .nav--keywords > li:last-child:after {
   display: none; }
 
@@ -1915,123 +1915,123 @@ label,
 /**
 * Whole
 */
-/* line 17, lib/scss/inuit.css/generic/_widths.scss */
+/* line 17, ../scss/inuit.css/generic/_widths.scss */
 .one-whole {
   width: 100%; }
 
 /**
 * Halves
 */
-/* line 23, lib/scss/inuit.css/generic/_widths.scss */
+/* line 23, ../scss/inuit.css/generic/_widths.scss */
 .one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths {
   width: 50%; }
 
 /**
 * Thirds
 */
-/* line 29, lib/scss/inuit.css/generic/_widths.scss */
+/* line 29, ../scss/inuit.css/generic/_widths.scss */
 .one-third, .two-sixths, .four-twelfths {
   width: 33.333%; }
 
-/* line 30, lib/scss/inuit.css/generic/_widths.scss */
+/* line 30, ../scss/inuit.css/generic/_widths.scss */
 .two-thirds, .four-sixths, .eight-twelfths {
   width: 66.666%; }
 
 /**
 * Quarters
 */
-/* line 36, lib/scss/inuit.css/generic/_widths.scss */
+/* line 36, ../scss/inuit.css/generic/_widths.scss */
 .one-quarter, .two-eighths, .three-twelfths {
   width: 25%; }
 
-/* line 38, lib/scss/inuit.css/generic/_widths.scss */
+/* line 38, ../scss/inuit.css/generic/_widths.scss */
 .three-quarters, .six-eighths, .nine-twelfths {
   width: 75%; }
 
 /**
 * Fifths
 */
-/* line 44, lib/scss/inuit.css/generic/_widths.scss */
+/* line 44, ../scss/inuit.css/generic/_widths.scss */
 .one-fifth, .two-tenths {
   width: 20%; }
 
-/* line 45, lib/scss/inuit.css/generic/_widths.scss */
+/* line 45, ../scss/inuit.css/generic/_widths.scss */
 .two-fifths, .four-tenths {
   width: 40%; }
 
-/* line 46, lib/scss/inuit.css/generic/_widths.scss */
+/* line 46, ../scss/inuit.css/generic/_widths.scss */
 .three-fifths, .six-tenths {
   width: 60%; }
 
-/* line 47, lib/scss/inuit.css/generic/_widths.scss */
+/* line 47, ../scss/inuit.css/generic/_widths.scss */
 .four-fifths, .eight-tenths {
   width: 80%; }
 
 /**
 * Sixths
 */
-/* line 53, lib/scss/inuit.css/generic/_widths.scss */
+/* line 53, ../scss/inuit.css/generic/_widths.scss */
 .one-sixth, .two-twelfths {
   width: 16.666%; }
 
-/* line 57, lib/scss/inuit.css/generic/_widths.scss */
+/* line 57, ../scss/inuit.css/generic/_widths.scss */
 .five-sixths, .ten-twelfths {
   width: 83.333%; }
 
 /**
 * Eighths
 */
-/* line 63, lib/scss/inuit.css/generic/_widths.scss */
+/* line 63, ../scss/inuit.css/generic/_widths.scss */
 .one-eighth {
   width: 12.5%; }
 
-/* line 65, lib/scss/inuit.css/generic/_widths.scss */
+/* line 65, ../scss/inuit.css/generic/_widths.scss */
 .three-eighths {
   width: 37.5%; }
 
-/* line 67, lib/scss/inuit.css/generic/_widths.scss */
+/* line 67, ../scss/inuit.css/generic/_widths.scss */
 .five-eighths {
   width: 62.5%; }
 
-/* line 69, lib/scss/inuit.css/generic/_widths.scss */
+/* line 69, ../scss/inuit.css/generic/_widths.scss */
 .seven-eighths {
   width: 87.5%; }
 
 /**
 * Tenths
 */
-/* line 75, lib/scss/inuit.css/generic/_widths.scss */
+/* line 75, ../scss/inuit.css/generic/_widths.scss */
 .one-tenth {
   width: 10%; }
 
-/* line 77, lib/scss/inuit.css/generic/_widths.scss */
+/* line 77, ../scss/inuit.css/generic/_widths.scss */
 .three-tenths {
   width: 30%; }
 
-/* line 81, lib/scss/inuit.css/generic/_widths.scss */
+/* line 81, ../scss/inuit.css/generic/_widths.scss */
 .seven-tenths {
   width: 70%; }
 
-/* line 83, lib/scss/inuit.css/generic/_widths.scss */
+/* line 83, ../scss/inuit.css/generic/_widths.scss */
 .nine-tenths {
   width: 90%; }
 
 /**
 * Twelfths
 */
-/* line 89, lib/scss/inuit.css/generic/_widths.scss */
+/* line 89, ../scss/inuit.css/generic/_widths.scss */
 .one-twelfth {
   width: 8.333%; }
 
-/* line 93, lib/scss/inuit.css/generic/_widths.scss */
+/* line 93, ../scss/inuit.css/generic/_widths.scss */
 .five-twelfths {
   width: 41.666%; }
 
-/* line 95, lib/scss/inuit.css/generic/_widths.scss */
+/* line 95, ../scss/inuit.css/generic/_widths.scss */
 .seven-twelfths {
   width: 58.333%; }
 
-/* line 99, lib/scss/inuit.css/generic/_widths.scss */
+/* line 99, ../scss/inuit.css/generic/_widths.scss */
 .eleven-twelfths {
   width: 91.666%; }
 
@@ -2053,615 +2053,615 @@ label,
   /**
   * Whole
   */
-  /* line 17, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 17, ../scss/inuit.css/generic/_widths.scss */
   .palm-one-whole {
     width: 100%; }
 
   /**
   * Halves
   */
-  /* line 23, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 23, ../scss/inuit.css/generic/_widths.scss */
   .palm-one-half, .palm-two-quarters, .palm-three-sixths, .palm-four-eighths, .palm-five-tenths, .palm-six-twelfths {
     width: 50%; }
 
   /**
   * Thirds
   */
-  /* line 29, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 29, ../scss/inuit.css/generic/_widths.scss */
   .palm-one-third, .palm-two-sixths, .palm-four-twelfths {
     width: 33.333%; }
 
-  /* line 30, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 30, ../scss/inuit.css/generic/_widths.scss */
   .palm-two-thirds, .palm-four-sixths, .palm-eight-twelfths {
     width: 66.666%; }
 
   /**
   * Quarters
   */
-  /* line 36, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 36, ../scss/inuit.css/generic/_widths.scss */
   .palm-one-quarter, .palm-two-eighths, .palm-three-twelfths {
     width: 25%; }
 
-  /* line 38, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 38, ../scss/inuit.css/generic/_widths.scss */
   .palm-three-quarters, .palm-six-eighths, .palm-nine-twelfths {
     width: 75%; }
 
   /**
   * Fifths
   */
-  /* line 44, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 44, ../scss/inuit.css/generic/_widths.scss */
   .palm-one-fifth, .palm-two-tenths {
     width: 20%; }
 
-  /* line 45, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 45, ../scss/inuit.css/generic/_widths.scss */
   .palm-two-fifths, .palm-four-tenths {
     width: 40%; }
 
-  /* line 46, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 46, ../scss/inuit.css/generic/_widths.scss */
   .palm-three-fifths, .palm-six-tenths {
     width: 60%; }
 
-  /* line 47, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 47, ../scss/inuit.css/generic/_widths.scss */
   .palm-four-fifths, .palm-eight-tenths {
     width: 80%; }
 
   /**
   * Sixths
   */
-  /* line 53, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 53, ../scss/inuit.css/generic/_widths.scss */
   .palm-one-sixth, .palm-two-twelfths {
     width: 16.666%; }
 
-  /* line 57, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 57, ../scss/inuit.css/generic/_widths.scss */
   .palm-five-sixths, .palm-ten-twelfths {
     width: 83.333%; }
 
   /**
   * Eighths
   */
-  /* line 63, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 63, ../scss/inuit.css/generic/_widths.scss */
   .palm-one-eighth {
     width: 12.5%; }
 
-  /* line 65, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 65, ../scss/inuit.css/generic/_widths.scss */
   .palm-three-eighths {
     width: 37.5%; }
 
-  /* line 67, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 67, ../scss/inuit.css/generic/_widths.scss */
   .palm-five-eighths {
     width: 62.5%; }
 
-  /* line 69, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 69, ../scss/inuit.css/generic/_widths.scss */
   .palm-seven-eighths {
     width: 87.5%; }
 
   /**
   * Tenths
   */
-  /* line 75, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 75, ../scss/inuit.css/generic/_widths.scss */
   .palm-one-tenth {
     width: 10%; }
 
-  /* line 77, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 77, ../scss/inuit.css/generic/_widths.scss */
   .palm-three-tenths {
     width: 30%; }
 
-  /* line 81, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 81, ../scss/inuit.css/generic/_widths.scss */
   .palm-seven-tenths {
     width: 70%; }
 
-  /* line 83, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 83, ../scss/inuit.css/generic/_widths.scss */
   .palm-nine-tenths {
     width: 90%; }
 
   /**
   * Twelfths
   */
-  /* line 89, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 89, ../scss/inuit.css/generic/_widths.scss */
   .palm-one-twelfth {
     width: 8.333%; }
 
-  /* line 93, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 93, ../scss/inuit.css/generic/_widths.scss */
   .palm-five-twelfths {
     width: 41.666%; }
 
-  /* line 95, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 95, ../scss/inuit.css/generic/_widths.scss */
   .palm-seven-twelfths {
     width: 58.333%; }
 
-  /* line 99, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 99, ../scss/inuit.css/generic/_widths.scss */
   .palm-eleven-twelfths {
     width: 91.666%; } }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   /**
   * Whole
   */
-  /* line 17, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 17, ../scss/inuit.css/generic/_widths.scss */
   .lap-one-whole {
     width: 100%; }
 
   /**
   * Halves
   */
-  /* line 23, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 23, ../scss/inuit.css/generic/_widths.scss */
   .lap-one-half, .lap-two-quarters, .lap-three-sixths, .lap-four-eighths, .lap-five-tenths, .lap-six-twelfths {
     width: 50%; }
 
   /**
   * Thirds
   */
-  /* line 29, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 29, ../scss/inuit.css/generic/_widths.scss */
   .lap-one-third, .lap-two-sixths, .lap-four-twelfths {
     width: 33.333%; }
 
-  /* line 30, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 30, ../scss/inuit.css/generic/_widths.scss */
   .lap-two-thirds, .lap-four-sixths, .lap-eight-twelfths {
     width: 66.666%; }
 
   /**
   * Quarters
   */
-  /* line 36, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 36, ../scss/inuit.css/generic/_widths.scss */
   .lap-one-quarter, .lap-two-eighths, .lap-three-twelfths {
     width: 25%; }
 
-  /* line 38, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 38, ../scss/inuit.css/generic/_widths.scss */
   .lap-three-quarters, .lap-six-eighths, .lap-nine-twelfths {
     width: 75%; }
 
   /**
   * Fifths
   */
-  /* line 44, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 44, ../scss/inuit.css/generic/_widths.scss */
   .lap-one-fifth, .lap-two-tenths {
     width: 20%; }
 
-  /* line 45, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 45, ../scss/inuit.css/generic/_widths.scss */
   .lap-two-fifths, .lap-four-tenths {
     width: 40%; }
 
-  /* line 46, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 46, ../scss/inuit.css/generic/_widths.scss */
   .lap-three-fifths, .lap-six-tenths {
     width: 60%; }
 
-  /* line 47, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 47, ../scss/inuit.css/generic/_widths.scss */
   .lap-four-fifths, .lap-eight-tenths {
     width: 80%; }
 
   /**
   * Sixths
   */
-  /* line 53, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 53, ../scss/inuit.css/generic/_widths.scss */
   .lap-one-sixth, .lap-two-twelfths {
     width: 16.666%; }
 
-  /* line 57, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 57, ../scss/inuit.css/generic/_widths.scss */
   .lap-five-sixths, .lap-ten-twelfths {
     width: 83.333%; }
 
   /**
   * Eighths
   */
-  /* line 63, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 63, ../scss/inuit.css/generic/_widths.scss */
   .lap-one-eighth {
     width: 12.5%; }
 
-  /* line 65, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 65, ../scss/inuit.css/generic/_widths.scss */
   .lap-three-eighths {
     width: 37.5%; }
 
-  /* line 67, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 67, ../scss/inuit.css/generic/_widths.scss */
   .lap-five-eighths {
     width: 62.5%; }
 
-  /* line 69, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 69, ../scss/inuit.css/generic/_widths.scss */
   .lap-seven-eighths {
     width: 87.5%; }
 
   /**
   * Tenths
   */
-  /* line 75, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 75, ../scss/inuit.css/generic/_widths.scss */
   .lap-one-tenth {
     width: 10%; }
 
-  /* line 77, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 77, ../scss/inuit.css/generic/_widths.scss */
   .lap-three-tenths {
     width: 30%; }
 
-  /* line 81, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 81, ../scss/inuit.css/generic/_widths.scss */
   .lap-seven-tenths {
     width: 70%; }
 
-  /* line 83, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 83, ../scss/inuit.css/generic/_widths.scss */
   .lap-nine-tenths {
     width: 90%; }
 
   /**
   * Twelfths
   */
-  /* line 89, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 89, ../scss/inuit.css/generic/_widths.scss */
   .lap-one-twelfth {
     width: 8.333%; }
 
-  /* line 93, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 93, ../scss/inuit.css/generic/_widths.scss */
   .lap-five-twelfths {
     width: 41.666%; }
 
-  /* line 95, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 95, ../scss/inuit.css/generic/_widths.scss */
   .lap-seven-twelfths {
     width: 58.333%; }
 
-  /* line 99, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 99, ../scss/inuit.css/generic/_widths.scss */
   .lap-eleven-twelfths {
     width: 91.666%; } }
 @media only screen and (min-width: 481px) {
   /**
   * Whole
   */
-  /* line 17, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 17, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-one-whole {
     width: 100%; }
 
   /**
   * Halves
   */
-  /* line 23, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 23, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-one-half, .lap-and-up-two-quarters, .lap-and-up-three-sixths, .lap-and-up-four-eighths, .lap-and-up-five-tenths, .lap-and-up-six-twelfths {
     width: 50%; }
 
   /**
   * Thirds
   */
-  /* line 29, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 29, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-one-third, .lap-and-up-two-sixths, .lap-and-up-four-twelfths {
     width: 33.333%; }
 
-  /* line 30, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 30, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-two-thirds, .lap-and-up-four-sixths, .lap-and-up-eight-twelfths {
     width: 66.666%; }
 
   /**
   * Quarters
   */
-  /* line 36, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 36, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-one-quarter, .lap-and-up-two-eighths, .lap-and-up-three-twelfths {
     width: 25%; }
 
-  /* line 38, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 38, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-three-quarters, .lap-and-up-six-eighths, .lap-and-up-nine-twelfths {
     width: 75%; }
 
   /**
   * Fifths
   */
-  /* line 44, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 44, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-one-fifth, .lap-and-up-two-tenths {
     width: 20%; }
 
-  /* line 45, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 45, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-two-fifths, .lap-and-up-four-tenths {
     width: 40%; }
 
-  /* line 46, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 46, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-three-fifths, .lap-and-up-six-tenths {
     width: 60%; }
 
-  /* line 47, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 47, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-four-fifths, .lap-and-up-eight-tenths {
     width: 80%; }
 
   /**
   * Sixths
   */
-  /* line 53, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 53, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-one-sixth, .lap-and-up-two-twelfths {
     width: 16.666%; }
 
-  /* line 57, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 57, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-five-sixths, .lap-and-up-ten-twelfths {
     width: 83.333%; }
 
   /**
   * Eighths
   */
-  /* line 63, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 63, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-one-eighth {
     width: 12.5%; }
 
-  /* line 65, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 65, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-three-eighths {
     width: 37.5%; }
 
-  /* line 67, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 67, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-five-eighths {
     width: 62.5%; }
 
-  /* line 69, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 69, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-seven-eighths {
     width: 87.5%; }
 
   /**
   * Tenths
   */
-  /* line 75, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 75, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-one-tenth {
     width: 10%; }
 
-  /* line 77, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 77, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-three-tenths {
     width: 30%; }
 
-  /* line 81, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 81, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-seven-tenths {
     width: 70%; }
 
-  /* line 83, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 83, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-nine-tenths {
     width: 90%; }
 
   /**
   * Twelfths
   */
-  /* line 89, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 89, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-one-twelfth {
     width: 8.333%; }
 
-  /* line 93, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 93, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-five-twelfths {
     width: 41.666%; }
 
-  /* line 95, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 95, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-seven-twelfths {
     width: 58.333%; }
 
-  /* line 99, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 99, ../scss/inuit.css/generic/_widths.scss */
   .lap-and-up-eleven-twelfths {
     width: 91.666%; } }
 @media only screen and (max-width: 1023px) {
   /**
   * Whole
   */
-  /* line 17, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 17, ../scss/inuit.css/generic/_widths.scss */
   .portable-one-whole {
     width: 100%; }
 
   /**
   * Halves
   */
-  /* line 23, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 23, ../scss/inuit.css/generic/_widths.scss */
   .portable-one-half, .portable-two-quarters, .portable-three-sixths, .portable-four-eighths, .portable-five-tenths, .portable-six-twelfths {
     width: 50%; }
 
   /**
   * Thirds
   */
-  /* line 29, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 29, ../scss/inuit.css/generic/_widths.scss */
   .portable-one-third, .portable-two-sixths, .portable-four-twelfths {
     width: 33.333%; }
 
-  /* line 30, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 30, ../scss/inuit.css/generic/_widths.scss */
   .portable-two-thirds, .portable-four-sixths, .portable-eight-twelfths {
     width: 66.666%; }
 
   /**
   * Quarters
   */
-  /* line 36, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 36, ../scss/inuit.css/generic/_widths.scss */
   .portable-one-quarter, .portable-two-eighths, .portable-three-twelfths {
     width: 25%; }
 
-  /* line 38, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 38, ../scss/inuit.css/generic/_widths.scss */
   .portable-three-quarters, .portable-six-eighths, .portable-nine-twelfths {
     width: 75%; }
 
   /**
   * Fifths
   */
-  /* line 44, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 44, ../scss/inuit.css/generic/_widths.scss */
   .portable-one-fifth, .portable-two-tenths {
     width: 20%; }
 
-  /* line 45, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 45, ../scss/inuit.css/generic/_widths.scss */
   .portable-two-fifths, .portable-four-tenths {
     width: 40%; }
 
-  /* line 46, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 46, ../scss/inuit.css/generic/_widths.scss */
   .portable-three-fifths, .portable-six-tenths {
     width: 60%; }
 
-  /* line 47, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 47, ../scss/inuit.css/generic/_widths.scss */
   .portable-four-fifths, .portable-eight-tenths {
     width: 80%; }
 
   /**
   * Sixths
   */
-  /* line 53, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 53, ../scss/inuit.css/generic/_widths.scss */
   .portable-one-sixth, .portable-two-twelfths {
     width: 16.666%; }
 
-  /* line 57, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 57, ../scss/inuit.css/generic/_widths.scss */
   .portable-five-sixths, .portable-ten-twelfths {
     width: 83.333%; }
 
   /**
   * Eighths
   */
-  /* line 63, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 63, ../scss/inuit.css/generic/_widths.scss */
   .portable-one-eighth {
     width: 12.5%; }
 
-  /* line 65, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 65, ../scss/inuit.css/generic/_widths.scss */
   .portable-three-eighths {
     width: 37.5%; }
 
-  /* line 67, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 67, ../scss/inuit.css/generic/_widths.scss */
   .portable-five-eighths {
     width: 62.5%; }
 
-  /* line 69, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 69, ../scss/inuit.css/generic/_widths.scss */
   .portable-seven-eighths {
     width: 87.5%; }
 
   /**
   * Tenths
   */
-  /* line 75, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 75, ../scss/inuit.css/generic/_widths.scss */
   .portable-one-tenth {
     width: 10%; }
 
-  /* line 77, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 77, ../scss/inuit.css/generic/_widths.scss */
   .portable-three-tenths {
     width: 30%; }
 
-  /* line 81, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 81, ../scss/inuit.css/generic/_widths.scss */
   .portable-seven-tenths {
     width: 70%; }
 
-  /* line 83, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 83, ../scss/inuit.css/generic/_widths.scss */
   .portable-nine-tenths {
     width: 90%; }
 
   /**
   * Twelfths
   */
-  /* line 89, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 89, ../scss/inuit.css/generic/_widths.scss */
   .portable-one-twelfth {
     width: 8.333%; }
 
-  /* line 93, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 93, ../scss/inuit.css/generic/_widths.scss */
   .portable-five-twelfths {
     width: 41.666%; }
 
-  /* line 95, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 95, ../scss/inuit.css/generic/_widths.scss */
   .portable-seven-twelfths {
     width: 58.333%; }
 
-  /* line 99, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 99, ../scss/inuit.css/generic/_widths.scss */
   .portable-eleven-twelfths {
     width: 91.666%; } }
 @media only screen and (min-width: 1024px) {
   /**
   * Whole
   */
-  /* line 17, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 17, ../scss/inuit.css/generic/_widths.scss */
   .desk-one-whole {
     width: 100%; }
 
   /**
   * Halves
   */
-  /* line 23, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 23, ../scss/inuit.css/generic/_widths.scss */
   .desk-one-half, .desk-two-quarters, .desk-three-sixths, .desk-four-eighths, .desk-five-tenths, .desk-six-twelfths {
     width: 50%; }
 
   /**
   * Thirds
   */
-  /* line 29, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 29, ../scss/inuit.css/generic/_widths.scss */
   .desk-one-third, .desk-two-sixths, .desk-four-twelfths {
     width: 33.333%; }
 
-  /* line 30, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 30, ../scss/inuit.css/generic/_widths.scss */
   .desk-two-thirds, .desk-four-sixths, .desk-eight-twelfths {
     width: 66.666%; }
 
   /**
   * Quarters
   */
-  /* line 36, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 36, ../scss/inuit.css/generic/_widths.scss */
   .desk-one-quarter, .desk-two-eighths, .desk-three-twelfths {
     width: 25%; }
 
-  /* line 38, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 38, ../scss/inuit.css/generic/_widths.scss */
   .desk-three-quarters, .desk-six-eighths, .desk-nine-twelfths {
     width: 75%; }
 
   /**
   * Fifths
   */
-  /* line 44, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 44, ../scss/inuit.css/generic/_widths.scss */
   .desk-one-fifth, .desk-two-tenths {
     width: 20%; }
 
-  /* line 45, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 45, ../scss/inuit.css/generic/_widths.scss */
   .desk-two-fifths, .desk-four-tenths {
     width: 40%; }
 
-  /* line 46, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 46, ../scss/inuit.css/generic/_widths.scss */
   .desk-three-fifths, .desk-six-tenths {
     width: 60%; }
 
-  /* line 47, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 47, ../scss/inuit.css/generic/_widths.scss */
   .desk-four-fifths, .desk-eight-tenths {
     width: 80%; }
 
   /**
   * Sixths
   */
-  /* line 53, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 53, ../scss/inuit.css/generic/_widths.scss */
   .desk-one-sixth, .desk-two-twelfths {
     width: 16.666%; }
 
-  /* line 57, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 57, ../scss/inuit.css/generic/_widths.scss */
   .desk-five-sixths, .desk-ten-twelfths {
     width: 83.333%; }
 
   /**
   * Eighths
   */
-  /* line 63, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 63, ../scss/inuit.css/generic/_widths.scss */
   .desk-one-eighth {
     width: 12.5%; }
 
-  /* line 65, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 65, ../scss/inuit.css/generic/_widths.scss */
   .desk-three-eighths {
     width: 37.5%; }
 
-  /* line 67, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 67, ../scss/inuit.css/generic/_widths.scss */
   .desk-five-eighths {
     width: 62.5%; }
 
-  /* line 69, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 69, ../scss/inuit.css/generic/_widths.scss */
   .desk-seven-eighths {
     width: 87.5%; }
 
   /**
   * Tenths
   */
-  /* line 75, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 75, ../scss/inuit.css/generic/_widths.scss */
   .desk-one-tenth {
     width: 10%; }
 
-  /* line 77, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 77, ../scss/inuit.css/generic/_widths.scss */
   .desk-three-tenths {
     width: 30%; }
 
-  /* line 81, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 81, ../scss/inuit.css/generic/_widths.scss */
   .desk-seven-tenths {
     width: 70%; }
 
-  /* line 83, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 83, ../scss/inuit.css/generic/_widths.scss */
   .desk-nine-tenths {
     width: 90%; }
 
   /**
   * Twelfths
   */
-  /* line 89, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 89, ../scss/inuit.css/generic/_widths.scss */
   .desk-one-twelfth {
     width: 8.333%; }
 
-  /* line 93, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 93, ../scss/inuit.css/generic/_widths.scss */
   .desk-five-twelfths {
     width: 41.666%; }
 
-  /* line 95, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 95, ../scss/inuit.css/generic/_widths.scss */
   .desk-seven-twelfths {
     width: 58.333%; }
 
-  /* line 99, lib/scss/inuit.css/generic/_widths.scss */
+  /* line 99, ../scss/inuit.css/generic/_widths.scss */
   .desk-eleven-twelfths {
     width: 91.666%; } }
 /**
@@ -2689,16 +2689,16 @@ label,
  * `.brand` is a quick and simple way to apply your brand face and/or color to
  * any element using a handy helper class.
  */
-/* line 8, lib/scss/inuit.css/generic/_brand.scss */
+/* line 8, ../scss/inuit.css/generic/_brand.scss */
 .brand {
   font-family: "Helvetica Neue", sans-serif!important;
   color: #4a8ec2!important; }
 
-/* line 12, lib/scss/inuit.css/generic/_brand.scss */
+/* line 12, ../scss/inuit.css/generic/_brand.scss */
 .brand-face {
   font-family: "Helvetica Neue", sans-serif!important; }
 
-/* line 16, lib/scss/inuit.css/generic/_brand.scss */
+/* line 16, ../scss/inuit.css/generic/_brand.scss */
 .brand-color,
 .brand-colour {
   color: #4a8ec2!important; }
@@ -2718,242 +2718,242 @@ label,
 /**
  * Add/remove floats
  */
-/* line 18, lib/scss/inuit.css/generic/_helper.scss */
+/* line 18, ../scss/inuit.css/generic/_helper.scss */
 .float--right {
-  float: right!important; }
+  float: right !important; }
 
-/* line 19, lib/scss/inuit.css/generic/_helper.scss */
+/* line 19, ../scss/inuit.css/generic/_helper.scss */
 .float--left {
   float: left !important; }
 
-/* line 20, lib/scss/inuit.css/generic/_helper.scss */
+/* line 20, ../scss/inuit.css/generic/_helper.scss */
 .float--none {
   float: none !important; }
 
 /**
  * Text alignment
  */
-/* line 26, lib/scss/inuit.css/generic/_helper.scss */
+/* line 26, ../scss/inuit.css/generic/_helper.scss */
 .text--left {
-  text-align: left !important; }
+  text-align: left  !important; }
 
-/* line 27, lib/scss/inuit.css/generic/_helper.scss */
+/* line 27, ../scss/inuit.css/generic/_helper.scss */
 .text--center {
-  text-align: center!important; }
+  text-align: center !important; }
 
-/* line 28, lib/scss/inuit.css/generic/_helper.scss */
+/* line 28, ../scss/inuit.css/generic/_helper.scss */
 .text--right {
   text-align: right !important; }
 
 /**
  * Font weights
  */
-/* line 34, lib/scss/inuit.css/generic/_helper.scss */
+/* line 34, ../scss/inuit.css/generic/_helper.scss */
 .weight--light {
-  font-weight: 300!important; }
+  font-weight: 300 !important; }
 
-/* line 35, lib/scss/inuit.css/generic/_helper.scss */
+/* line 35, ../scss/inuit.css/generic/_helper.scss */
 .weight--normal {
-  font-weight: 400!important; }
+  font-weight: 400 !important; }
 
-/* line 36, lib/scss/inuit.css/generic/_helper.scss */
+/* line 36, ../scss/inuit.css/generic/_helper.scss */
 .weight--semibold {
-  font-weight: 600!important; }
+  font-weight: 600 !important; }
 
 /**
  * Add/remove margins
  */
-/* line 42, lib/scss/inuit.css/generic/_helper.scss */
+/* line 42, ../scss/inuit.css/generic/_helper.scss */
 .push {
   margin: 24px !important; }
 
-/* line 43, lib/scss/inuit.css/generic/_helper.scss */
+/* line 43, ../scss/inuit.css/generic/_helper.scss */
 .push--top {
   margin-top: 24px !important; }
 
-/* line 44, lib/scss/inuit.css/generic/_helper.scss */
+/* line 44, ../scss/inuit.css/generic/_helper.scss */
 .push--right {
   margin-right: 24px !important; }
 
-/* line 45, lib/scss/inuit.css/generic/_helper.scss */
+/* line 45, ../scss/inuit.css/generic/_helper.scss */
 .push--bottom {
   margin-bottom: 24px !important; }
 
-/* line 46, lib/scss/inuit.css/generic/_helper.scss */
+/* line 46, ../scss/inuit.css/generic/_helper.scss */
 .push--left {
   margin-left: 24px !important; }
 
-/* line 47, lib/scss/inuit.css/generic/_helper.scss */
+/* line 47, ../scss/inuit.css/generic/_helper.scss */
 .push--ends {
   margin-top: 24px !important;
   margin-bottom: 24px !important; }
 
-/* line 48, lib/scss/inuit.css/generic/_helper.scss */
+/* line 48, ../scss/inuit.css/generic/_helper.scss */
 .push--sides {
   margin-right: 24px !important;
   margin-left: 24px !important; }
 
-/* line 50, lib/scss/inuit.css/generic/_helper.scss */
+/* line 50, ../scss/inuit.css/generic/_helper.scss */
 .push-half {
   margin: 12px !important; }
 
-/* line 51, lib/scss/inuit.css/generic/_helper.scss */
+/* line 51, ../scss/inuit.css/generic/_helper.scss */
 .push-half--top {
   margin-top: 12px !important; }
 
-/* line 52, lib/scss/inuit.css/generic/_helper.scss */
+/* line 52, ../scss/inuit.css/generic/_helper.scss */
 .push-half--right {
   margin-right: 12px !important; }
 
-/* line 53, lib/scss/inuit.css/generic/_helper.scss */
+/* line 53, ../scss/inuit.css/generic/_helper.scss */
 .push-half--bottom {
   margin-bottom: 12px !important; }
 
-/* line 54, lib/scss/inuit.css/generic/_helper.scss */
+/* line 54, ../scss/inuit.css/generic/_helper.scss */
 .push-half--left {
   margin-left: 12px !important; }
 
-/* line 55, lib/scss/inuit.css/generic/_helper.scss */
+/* line 55, ../scss/inuit.css/generic/_helper.scss */
 .push-half--ends {
   margin-top: 12px !important;
   margin-bottom: 12px !important; }
 
-/* line 56, lib/scss/inuit.css/generic/_helper.scss */
+/* line 56, ../scss/inuit.css/generic/_helper.scss */
 .push-half--sides {
   margin-right: 12px !important;
   margin-left: 12px !important; }
 
-/* line 58, lib/scss/inuit.css/generic/_helper.scss */
+/* line 58, ../scss/inuit.css/generic/_helper.scss */
 .flush {
-  margin: 0!important; }
+  margin: 0 !important; }
 
-/* line 59, lib/scss/inuit.css/generic/_helper.scss */
+/* line 59, ../scss/inuit.css/generic/_helper.scss */
 .flush--top {
-  margin-top: 0!important; }
+  margin-top: 0 !important; }
 
-/* line 60, lib/scss/inuit.css/generic/_helper.scss */
+/* line 60, ../scss/inuit.css/generic/_helper.scss */
 .flush--right {
-  margin-right: 0!important; }
+  margin-right: 0 !important; }
 
-/* line 61, lib/scss/inuit.css/generic/_helper.scss */
+/* line 61, ../scss/inuit.css/generic/_helper.scss */
 .flush--bottom {
-  margin-bottom: 0!important; }
+  margin-bottom: 0 !important; }
 
-/* line 62, lib/scss/inuit.css/generic/_helper.scss */
+/* line 62, ../scss/inuit.css/generic/_helper.scss */
 .flush--left {
-  margin-left: 0!important; }
+  margin-left: 0 !important; }
 
-/* line 63, lib/scss/inuit.css/generic/_helper.scss */
+/* line 63, ../scss/inuit.css/generic/_helper.scss */
 .flush--ends {
-  margin-top: 0!important;
-  margin-bottom: 0!important; }
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
 
-/* line 64, lib/scss/inuit.css/generic/_helper.scss */
+/* line 64, ../scss/inuit.css/generic/_helper.scss */
 .flush--sides {
-  margin-right: 0!important;
-  margin-left: 0!important; }
+  margin-right: 0 !important;
+  margin-left: 0 !important; }
 
 /**
  * Add/remove paddings
  */
-/* line 70, lib/scss/inuit.css/generic/_helper.scss */
+/* line 70, ../scss/inuit.css/generic/_helper.scss */
 .soft {
   padding: 24px !important; }
 
-/* line 71, lib/scss/inuit.css/generic/_helper.scss */
+/* line 71, ../scss/inuit.css/generic/_helper.scss */
 .soft--top {
   padding-top: 24px !important; }
 
-/* line 72, lib/scss/inuit.css/generic/_helper.scss */
+/* line 72, ../scss/inuit.css/generic/_helper.scss */
 .soft--right {
   padding-right: 24px !important; }
 
-/* line 73, lib/scss/inuit.css/generic/_helper.scss */
+/* line 73, ../scss/inuit.css/generic/_helper.scss */
 .soft--bottom {
   padding-bottom: 24px !important; }
 
-/* line 74, lib/scss/inuit.css/generic/_helper.scss */
+/* line 74, ../scss/inuit.css/generic/_helper.scss */
 .soft--left {
   padding-left: 24px !important; }
 
-/* line 75, lib/scss/inuit.css/generic/_helper.scss */
+/* line 75, ../scss/inuit.css/generic/_helper.scss */
 .soft--ends {
   padding-top: 24px !important;
   padding-bottom: 24px !important; }
 
-/* line 76, lib/scss/inuit.css/generic/_helper.scss */
+/* line 76, ../scss/inuit.css/generic/_helper.scss */
 .soft--sides {
   padding-right: 24px !important;
   padding-left: 24px !important; }
 
-/* line 78, lib/scss/inuit.css/generic/_helper.scss */
+/* line 78, ../scss/inuit.css/generic/_helper.scss */
 .soft-half {
   padding: 12px !important; }
 
-/* line 79, lib/scss/inuit.css/generic/_helper.scss */
+/* line 79, ../scss/inuit.css/generic/_helper.scss */
 .soft-half--top {
   padding-top: 12px !important; }
 
-/* line 80, lib/scss/inuit.css/generic/_helper.scss */
+/* line 80, ../scss/inuit.css/generic/_helper.scss */
 .soft-half--right {
   padding-right: 12px !important; }
 
-/* line 81, lib/scss/inuit.css/generic/_helper.scss */
+/* line 81, ../scss/inuit.css/generic/_helper.scss */
 .soft-half--bottom {
   padding-bottom: 12px !important; }
 
-/* line 82, lib/scss/inuit.css/generic/_helper.scss */
+/* line 82, ../scss/inuit.css/generic/_helper.scss */
 .soft-half--left {
   padding-left: 12px !important; }
 
-/* line 83, lib/scss/inuit.css/generic/_helper.scss */
+/* line 83, ../scss/inuit.css/generic/_helper.scss */
 .soft-half--ends {
   padding-top: 12px !important;
   padding-bottom: 12px !important; }
 
-/* line 84, lib/scss/inuit.css/generic/_helper.scss */
+/* line 84, ../scss/inuit.css/generic/_helper.scss */
 .soft-half--sides {
   padding-right: 12px !important;
   padding-left: 12px !important; }
 
-/* line 86, lib/scss/inuit.css/generic/_helper.scss */
+/* line 86, ../scss/inuit.css/generic/_helper.scss */
 .hard {
-  padding: 0!important; }
+  padding: 0 !important; }
 
-/* line 87, lib/scss/inuit.css/generic/_helper.scss */
+/* line 87, ../scss/inuit.css/generic/_helper.scss */
 .hard--top {
-  padding-top: 0!important; }
+  padding-top: 0 !important; }
 
-/* line 88, lib/scss/inuit.css/generic/_helper.scss */
+/* line 88, ../scss/inuit.css/generic/_helper.scss */
 .hard--right {
-  padding-right: 0!important; }
+  padding-right: 0 !important; }
 
-/* line 89, lib/scss/inuit.css/generic/_helper.scss */
+/* line 89, ../scss/inuit.css/generic/_helper.scss */
 .hard--bottom {
-  padding-bottom: 0!important; }
+  padding-bottom: 0 !important; }
 
-/* line 90, lib/scss/inuit.css/generic/_helper.scss */
+/* line 90, ../scss/inuit.css/generic/_helper.scss */
 .hard--left {
-  padding-left: 0!important; }
+  padding-left: 0 !important; }
 
-/* line 91, lib/scss/inuit.css/generic/_helper.scss */
+/* line 91, ../scss/inuit.css/generic/_helper.scss */
 .hard--ends {
-  padding-top: 0!important;
-  padding-bottom: 0!important; }
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
 
-/* line 92, lib/scss/inuit.css/generic/_helper.scss */
+/* line 92, ../scss/inuit.css/generic/_helper.scss */
 .hard--sides {
-  padding-right: 0!important;
-  padding-left: 0!important; }
+  padding-right: 0 !important;
+  padding-left: 0 !important; }
 
 /**
  * Pull items full width of `.island` parents.
  */
-/* line 98, lib/scss/inuit.css/generic/_helper.scss */
+/* line 98, ../scss/inuit.css/generic/_helper.scss */
 .full-bleed {
   margin-right: -24px !important;
   margin-left: -24px !important; }
-  /* line 102, lib/scss/inuit.css/generic/_helper.scss */
+  /* line 102, ../scss/inuit.css/generic/_helper.scss */
   .islet .full-bleed {
     margin-right: -12px !important;
     margin-left: -12px !important; }
@@ -2962,16 +2962,16 @@ label,
  * Add a help cursor to any element that gives the user extra information on
  * `:hover`.
  */
-/* line 113, lib/scss/inuit.css/generic/_helper.scss */
+/* line 113, ../scss/inuit.css/generic/_helper.scss */
 .informative {
-  cursor: help!important; }
+  cursor: help !important; }
 
 /**
  * Mute an object by reducing its opacity.
  */
-/* line 121, lib/scss/inuit.css/generic/_helper.scss */
+/* line 121, ../scss/inuit.css/generic/_helper.scss */
 .muted {
-  opacity: 0.5!important;
+  opacity: 0.5 !important;
   filter: alpha(opacity=50) !important; }
 
 /**
@@ -2980,9 +2980,9 @@ label,
    <p class=proceed><a href=#>Read more...</a></p>
  *
  */
-/* line 133, lib/scss/inuit.css/generic/_helper.scss */
+/* line 133, ../scss/inuit.css/generic/_helper.scss */
 .proceed {
-  text-align: right!important; }
+  text-align: right !important; }
 
 /**
  * Add a right-angled quote to links that imply movement, e.g.:
@@ -2990,163 +2990,163 @@ label,
    <a href=# class=go>Read more</a>
  *
  */
-/* line 144, lib/scss/inuit.css/generic/_helper.scss */
+/* line 144, ../scss/inuit.css/generic/_helper.scss */
 .go:after {
   content: "\00A0" "\00BB" !important; }
 
 /**
  * Apply capital case to an element (usually a `strong`).
  */
-/* line 152, lib/scss/inuit.css/generic/_helper.scss */
+/* line 152, ../scss/inuit.css/generic/_helper.scss */
 .caps {
-  text-transform: uppercase!important; }
+  text-transform: uppercase !important; }
 
 /**
  * Hide content off-screen without resorting to `display:none;`, also provide
  * breakpoint specific hidden elements.
  */
-/* line 172, lib/scss/inuit.css/generic/_helper.scss */
+/* line 172, ../scss/inuit.css/generic/_helper.scss */
 .accessibility,
 .visuallyhidden {
-  border: 0!important;
+  border: 0 !important;
   clip: rect(0 0 0 0) !important;
-  height: 1px!important;
-  margin: -1px!important;
-  overflow: hidden!important;
-  padding: 0!important;
-  position: absolute!important;
-  width: 1px!important; }
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important; }
 
 @media only screen and (max-width: 480px) {
-  /* line 179, lib/scss/inuit.css/generic/_helper.scss */
+  /* line 179, ../scss/inuit.css/generic/_helper.scss */
   .accessibility--palm,
   .visuallyhidden--palm {
-    border: 0!important;
+    border: 0 !important;
     clip: rect(0 0 0 0) !important;
-    height: 1px!important;
-    margin: -1px!important;
-    overflow: hidden!important;
-    padding: 0!important;
-    position: absolute!important;
-    width: 1px!important; } }
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important; } }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
-  /* line 179, lib/scss/inuit.css/generic/_helper.scss */
+  /* line 179, ../scss/inuit.css/generic/_helper.scss */
   .accessibility--lap,
   .visuallyhidden--lap {
-    border: 0!important;
+    border: 0 !important;
     clip: rect(0 0 0 0) !important;
-    height: 1px!important;
-    margin: -1px!important;
-    overflow: hidden!important;
-    padding: 0!important;
-    position: absolute!important;
-    width: 1px!important; } }
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important; } }
 @media only screen and (min-width: 481px) {
-  /* line 179, lib/scss/inuit.css/generic/_helper.scss */
+  /* line 179, ../scss/inuit.css/generic/_helper.scss */
   .accessibility--lap-and-up,
   .visuallyhidden--lap-and-up {
-    border: 0!important;
+    border: 0 !important;
     clip: rect(0 0 0 0) !important;
-    height: 1px!important;
-    margin: -1px!important;
-    overflow: hidden!important;
-    padding: 0!important;
-    position: absolute!important;
-    width: 1px!important; } }
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important; } }
 @media only screen and (max-width: 1023px) {
-  /* line 179, lib/scss/inuit.css/generic/_helper.scss */
+  /* line 179, ../scss/inuit.css/generic/_helper.scss */
   .accessibility--portable,
   .visuallyhidden--portable {
-    border: 0!important;
+    border: 0 !important;
     clip: rect(0 0 0 0) !important;
-    height: 1px!important;
-    margin: -1px!important;
-    overflow: hidden!important;
-    padding: 0!important;
-    position: absolute!important;
-    width: 1px!important; } }
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important; } }
 @media only screen and (min-width: 1024px) {
-  /* line 179, lib/scss/inuit.css/generic/_helper.scss */
+  /* line 179, ../scss/inuit.css/generic/_helper.scss */
   .accessibility--desk,
   .visuallyhidden--desk {
-    border: 0!important;
+    border: 0 !important;
     clip: rect(0 0 0 0) !important;
-    height: 1px!important;
-    margin: -1px!important;
-    overflow: hidden!important;
-    padding: 0!important;
-    position: absolute!important;
-    width: 1px!important; } }
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important; } }
 @media only screen and (min-width: 1200px) {
-  /* line 179, lib/scss/inuit.css/generic/_helper.scss */
+  /* line 179, ../scss/inuit.css/generic/_helper.scss */
   .accessibility--desk-wide,
   .visuallyhidden--desk-wide {
-    border: 0!important;
+    border: 0 !important;
     clip: rect(0 0 0 0) !important;
-    height: 1px!important;
-    margin: -1px!important;
-    overflow: hidden!important;
-    padding: 0!important;
-    position: absolute!important;
-    width: 1px!important; } }
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important; } }
 /* endif */
 /**
  * She’s all yours, cap’n... Begin importing your stuff here.
  */
-/* line 60, lib/scss/derijn/_vars.scss */
+/* line 60, ../scss/derijn/_vars.scss */
 ul, ol {
   list-style-position: inside; }
 
-/* line 1, lib/scss/derijn/_resets.scss */
+/* line 1, ../scss/derijn/_resets.scss */
 .current-menu-item {
   pointer-events: none; }
 
-/* line 2, lib/scss/derijn/_toplevel.scss */
+/* line 2, ../scss/derijn/_toplevel.scss */
 html {
   background: #848484 url("../../dist/images/diagonales_decalees.png");
   padding: 1rem 1rem 0; }
 
-/* line 6, lib/scss/derijn/_toplevel.scss */
+/* line 6, ../scss/derijn/_toplevel.scss */
 body {
   font-family: "PT Sans", serif; }
 
-/* line 9, lib/scss/derijn/_toplevel.scss */
+/* line 9, ../scss/derijn/_toplevel.scss */
 img {
   display: block; }
 
-/* line 12, lib/scss/derijn/_toplevel.scss */
+/* line 12, ../scss/derijn/_toplevel.scss */
 p img {
   display: inline-block; }
 
-/* line 24, lib/scss/derijn/_toplevel.scss */
+/* line 24, ../scss/derijn/_toplevel.scss */
 article {
   margin-bottom: 24px; }
 
-/* line 27, lib/scss/derijn/_toplevel.scss */
+/* line 27, ../scss/derijn/_toplevel.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", "Cherry Swash", serif; }
 
-/* line 30, lib/scss/derijn/_toplevel.scss */
+/* line 30, ../scss/derijn/_toplevel.scss */
 table {
   background-color: #f9f9f9;
   margin-bottom: 0.38198rem; }
-  /* line 33, lib/scss/derijn/_toplevel.scss */
+  /* line 33, ../scss/derijn/_toplevel.scss */
   table caption {
     color: #f9f9f9;
     text-align: left;
     font-size: 1.618rem;
     font-family: "Roboto Slab", "Cherry Swash", serif; }
-  /* line 39, lib/scss/derijn/_toplevel.scss */
+  /* line 39, ../scss/derijn/_toplevel.scss */
   table td {
     border: 1px solid #848484;
     padding: 0.38198rem; }
 
-/* line 2, lib/scss/derijn/_topnav.scss */
+/* line 2, ../scss/derijn/_topnav.scss */
 .topnav li {
   padding: 1rem;
   margin: 2.61792rem 0.61805rem 0;
   text-align: center; }
-  /* line 7, lib/scss/derijn/_topnav.scss */
+  /* line 7, ../scss/derijn/_topnav.scss */
   .topnav li:hover:after, .topnav li.current-menu-item:after {
     display: block;
     content: '';
@@ -3157,26 +3157,26 @@ table {
     width: 150%;
     background-color: #263a55;
     z-index: -1; }
-  /* line 19, lib/scss/derijn/_topnav.scss */
+  /* line 19, ../scss/derijn/_topnav.scss */
   .topnav li.current-menu-item:hover:after {
     display: none; }
-  /* line 22, lib/scss/derijn/_topnav.scss */
+  /* line 22, ../scss/derijn/_topnav.scss */
   .topnav li a {
     text-decoration: none;
     color: #f9f9f9;
     font-size: 1.2rem;
     text-shadow: 0.4px 0.8px 0.4px #1f2921; }
 
-/* line 31, lib/scss/derijn/_topnav.scss */
+/* line 31, ../scss/derijn/_topnav.scss */
 #navWrap {
   margin-bottom: -1.618rem; }
 
-/* line 2, lib/scss/derijn/_article.scss */
+/* line 2, ../scss/derijn/_article.scss */
 article {
   background-color: #263a55;
   padding: 1rem;
   font-size: 1rem; }
-  /* line 6, lib/scss/derijn/_article.scss */
+  /* line 6, ../scss/derijn/_article.scss */
   article h1, article h2 {
     display: inline-block;
     background-color: #c5d2d7;
@@ -3187,31 +3187,31 @@ article {
     left: -1rem;
     font-weight: bold;
     font-size: 2.61792rem; }
-  /* line 11, lib/scss/derijn/_article.scss */
+  /* line 11, ../scss/derijn/_article.scss */
   article p {
     background-color: #f3f3f3;
     padding: 0.61805rem; }
 
-/* line 2, lib/scss/derijn/_sidebar.scss */
+/* line 2, ../scss/derijn/_sidebar.scss */
 .sidebar-item h2, .sidebar-item h3, .sidebar-item caption {
   font-size: 1.618rem; }
-/* line 5, lib/scss/derijn/_sidebar.scss */
+/* line 5, ../scss/derijn/_sidebar.scss */
 .sidebar-item ul {
   background-color: #f9f9f9;
   margin: 0;
   padding: 1rem;
   line-height: 1.618;
   list-style: none; }
-  /* line 11, lib/scss/derijn/_sidebar.scss */
+  /* line 11, ../scss/derijn/_sidebar.scss */
   .sidebar-item ul li {
     width: 100%;
     border-bottom: 1px dotted #1f2921; }
 
-/* line 1, lib/scss/derijn/_derijn-helpers.scss */
+/* line 1, ../scss/derijn/_derijn-helpers.scss */
 .reltv {
   position: relative; }
 
-/* line 4, lib/scss/derijn/_derijn-helpers.scss */
+/* line 4, ../scss/derijn/_derijn-helpers.scss */
 .overlay {
   position: absolute;
   top: 0;
@@ -3222,23 +3222,32 @@ article {
   overflow-y: auto;
   margin: 0; }
 
-/* line 14, lib/scss/derijn/_derijn-helpers.scss */
+/* line 14, ../scss/derijn/_derijn-helpers.scss */
+.overlay--half {
+  position: absolute;
+  opacity: 0.8;
+  bottom: -25px; }
+  /* line 18, ../scss/derijn/_derijn-helpers.scss */
+  .overlay--half h2, .overlay--half h3 {
+    font-size: 1.618rem; }
+
+/* line 22, ../scss/derijn/_derijn-helpers.scss */
 .img-wrap img {
   width: 100%; }
 
-/* line 18, lib/scss/derijn/_derijn-helpers.scss */
+/* line 26, ../scss/derijn/_derijn-helpers.scss */
 .sidebar-item {
   margin-bottom: 24px; }
 
-/* line 22, lib/scss/derijn/_derijn-helpers.scss */
+/* line 30, ../scss/derijn/_derijn-helpers.scss */
 .page-footer article {
   margin-bottom: 0; }
 
-/* line 26, lib/scss/derijn/_derijn-helpers.scss */
+/* line 34, ../scss/derijn/_derijn-helpers.scss */
 .peeled {
   position: relative; }
 
-/* line 30, lib/scss/derijn/_derijn-helpers.scss */
+/* line 38, ../scss/derijn/_derijn-helpers.scss */
 .peeled:after, .peeled:before {
   display: inline-block;
   content: '';
@@ -3254,20 +3263,20 @@ article {
   z-index: -1;
   transform: rotate(3deg); }
 
-/* line 45, lib/scss/derijn/_derijn-helpers.scss */
+/* line 53, ../scss/derijn/_derijn-helpers.scss */
 .peeled:before {
   left: 12px;
   transform: rotate(-3deg); }
 
-/* line 50, lib/scss/derijn/_derijn-helpers.scss */
+/* line 58, ../scss/derijn/_derijn-helpers.scss */
 .dotlist__item {
   display: inline-block; }
 
-/* line 54, lib/scss/derijn/_derijn-helpers.scss */
+/* line 62, ../scss/derijn/_derijn-helpers.scss */
 .price {
   float: right; }
 
-/* line 58, lib/scss/derijn/_derijn-helpers.scss */
+/* line 66, ../scss/derijn/_derijn-helpers.scss */
 .blue-back {
   background-color: #263a55;
   padding: 1rem;
@@ -3278,7 +3287,7 @@ article {
  *	v1.24
  */
 /* clearfix */
-/* line 7, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 7, ../scss/owl-carousel/_owl.scss */
 .owl-carousel .owl-wrapper:after {
   content: ".";
   display: block;
@@ -3288,26 +3297,26 @@ article {
   height: 0; }
 
 /* display none until init */
-/* line 16, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 16, ../scss/owl-carousel/_owl.scss */
 .owl-carousel {
   display: none;
   position: relative;
   width: 100%;
   -ms-touch-action: pan-y; }
 
-/* line 22, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 22, ../scss/owl-carousel/_owl.scss */
 .owl-carousel .owl-wrapper {
   display: none;
   position: relative;
   -webkit-transform: translate3d(0px, 0px, 0px); }
 
-/* line 27, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 27, ../scss/owl-carousel/_owl.scss */
 .owl-carousel .owl-wrapper-outer {
   overflow: hidden;
   position: relative;
   width: 100%; }
 
-/* line 32, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 32, ../scss/owl-carousel/_owl.scss */
 .owl-carousel .owl-wrapper-outer.autoHeight {
   -webkit-transition: height 500ms ease-in-out;
   -moz-transition: height 500ms ease-in-out;
@@ -3315,16 +3324,16 @@ article {
   -o-transition: height 500ms ease-in-out;
   transition: height 500ms ease-in-out; }
 
-/* line 40, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 40, ../scss/owl-carousel/_owl.scss */
 .owl-carousel .owl-item {
   float: left; }
 
-/* line 44, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 44, ../scss/owl-carousel/_owl.scss */
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div {
   cursor: pointer; }
 
-/* line 47, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 47, ../scss/owl-carousel/_owl.scss */
 .owl-controls {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -3334,12 +3343,12 @@ article {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 /* mouse grab icon */
-/* line 57, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 57, ../scss/owl-carousel/_owl.scss */
 .grabbing {
   cursor: url(grabbing.png) 8 8, move; }
 
 /* fix */
-/* line 63, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 63, ../scss/owl-carousel/_owl.scss */
 .owl-carousel .owl-wrapper,
 .owl-carousel .owl-item {
   -webkit-backface-visibility: hidden;
@@ -3350,7 +3359,7 @@ article {
   -ms-transform: translate3d(0, 0, 0); }
 
 /* CSS3 Transitions */
-/* line 74, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 74, ../scss/owl-carousel/_owl.scss */
 .owl-origin {
   -webkit-perspective: 1200px;
   -webkit-perspective-origin-x: 50%;
@@ -3361,290 +3370,290 @@ article {
   perspective: 1200px; }
 
 /* fade */
-/* line 84, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 84, ../scss/owl-carousel/_owl.scss */
 .owl-fade-out {
   z-index: 10;
-  -webkit-animation: fadeOut 0.7s both ease;
-  -moz-animation: fadeOut 0.7s both ease;
-  animation: fadeOut 0.7s both ease; }
+  -webkit-animation: fadeOut .7s both ease;
+  -moz-animation: fadeOut .7s both ease;
+  animation: fadeOut .7s both ease; }
 
-/* line 90, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 90, ../scss/owl-carousel/_owl.scss */
 .owl-fade-in {
-  -webkit-animation: fadeIn 0.7s both ease;
-  -moz-animation: fadeIn 0.7s both ease;
-  animation: fadeIn 0.7s both ease; }
+  -webkit-animation: fadeIn .7s both ease;
+  -moz-animation: fadeIn .7s both ease;
+  animation: fadeIn .7s both ease; }
 
 /* backSlide */
-/* line 96, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 96, ../scss/owl-carousel/_owl.scss */
 .owl-backSlide-out {
   -webkit-animation: backSlideOut 1s both ease;
   -moz-animation: backSlideOut 1s both ease;
   animation: backSlideOut 1s both ease; }
 
-/* line 101, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 101, ../scss/owl-carousel/_owl.scss */
 .owl-backSlide-in {
   -webkit-animation: backSlideIn 1s both ease;
   -moz-animation: backSlideIn 1s both ease;
   animation: backSlideIn 1s both ease; }
 
 /* goDown */
-/* line 107, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 107, ../scss/owl-carousel/_owl.scss */
 .owl-goDown-out {
-  -webkit-animation: scaleToFade 0.7s ease both;
-  -moz-animation: scaleToFade 0.7s ease both;
-  animation: scaleToFade 0.7s ease both; }
+  -webkit-animation: scaleToFade .7s ease both;
+  -moz-animation: scaleToFade .7s ease both;
+  animation: scaleToFade .7s ease both; }
 
-/* line 112, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 112, ../scss/owl-carousel/_owl.scss */
 .owl-goDown-in {
-  -webkit-animation: goDown 0.6s ease both;
-  -moz-animation: goDown 0.6s ease both;
-  animation: goDown 0.6s ease both; }
+  -webkit-animation: goDown .6s ease both;
+  -moz-animation: goDown .6s ease both;
+  animation: goDown .6s ease both; }
 
 /* scaleUp */
-/* line 118, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 118, ../scss/owl-carousel/_owl.scss */
 .owl-fadeUp-in {
-  -webkit-animation: scaleUpFrom 0.5s ease both;
-  -moz-animation: scaleUpFrom 0.5s ease both;
-  animation: scaleUpFrom 0.5s ease both; }
+  -webkit-animation: scaleUpFrom .5s ease both;
+  -moz-animation: scaleUpFrom .5s ease both;
+  animation: scaleUpFrom .5s ease both; }
 
-/* line 124, lib/scss/derijn/../owl-carousel/_owl.scss */
+/* line 124, ../scss/owl-carousel/_owl.scss */
 .owl-fadeUp-out {
-  -webkit-animation: scaleUpTo 0.5s ease both;
-  -moz-animation: scaleUpTo 0.5s ease both;
-  animation: scaleUpTo 0.5s ease both; }
+  -webkit-animation: scaleUpTo .5s ease both;
+  -moz-animation: scaleUpTo .5s ease both;
+  animation: scaleUpTo .5s ease both; }
 
 /* Keyframes */
 /*empty*/
 @-webkit-keyframes empty {
-  /* line 132, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 132, ../scss/owl-carousel/_owl.scss */
   0% {
     opacity: 1; } }
 
 @-moz-keyframes empty {
-  /* line 135, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 135, ../scss/owl-carousel/_owl.scss */
   0% {
     opacity: 1; } }
 
 @keyframes empty {
-  /* line 138, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 138, ../scss/owl-carousel/_owl.scss */
   0% {
     opacity: 1; } }
 
 @-webkit-keyframes fadeIn {
-  /* line 141, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 141, ../scss/owl-carousel/_owl.scss */
   0% {
     opacity: 0; }
 
-  /* line 142, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 142, ../scss/owl-carousel/_owl.scss */
   100% {
     opacity: 1; } }
 
 @-moz-keyframes fadeIn {
-  /* line 145, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 145, ../scss/owl-carousel/_owl.scss */
   0% {
     opacity: 0; }
 
-  /* line 146, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 146, ../scss/owl-carousel/_owl.scss */
   100% {
     opacity: 1; } }
 
 @keyframes fadeIn {
-  /* line 149, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 149, ../scss/owl-carousel/_owl.scss */
   0% {
     opacity: 0; }
 
-  /* line 150, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 150, ../scss/owl-carousel/_owl.scss */
   100% {
     opacity: 1; } }
 
 @-webkit-keyframes fadeOut {
-  /* line 153, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 153, ../scss/owl-carousel/_owl.scss */
   0% {
     opacity: 1; }
 
-  /* line 154, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 154, ../scss/owl-carousel/_owl.scss */
   100% {
     opacity: 0; } }
 
 @-moz-keyframes fadeOut {
-  /* line 157, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 157, ../scss/owl-carousel/_owl.scss */
   0% {
     opacity: 1; }
 
-  /* line 158, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 158, ../scss/owl-carousel/_owl.scss */
   100% {
     opacity: 0; } }
 
 @keyframes fadeOut {
-  /* line 161, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 161, ../scss/owl-carousel/_owl.scss */
   0% {
     opacity: 1; }
 
-  /* line 162, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 162, ../scss/owl-carousel/_owl.scss */
   100% {
     opacity: 0; } }
 
 @-webkit-keyframes backSlideOut {
-  /* line 165, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 165, ../scss/owl-carousel/_owl.scss */
   25% {
     opacity: .5;
     -webkit-transform: translateZ(-500px); }
 
-  /* line 166, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 166, ../scss/owl-carousel/_owl.scss */
   75% {
     opacity: .5;
     -webkit-transform: translateZ(-500px) translateX(-200%); }
 
-  /* line 167, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 167, ../scss/owl-carousel/_owl.scss */
   100% {
     opacity: .5;
     -webkit-transform: translateZ(-500px) translateX(-200%); } }
 
 @-moz-keyframes backSlideOut {
-  /* line 170, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 170, ../scss/owl-carousel/_owl.scss */
   25% {
     opacity: .5;
     -moz-transform: translateZ(-500px); }
 
-  /* line 171, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 171, ../scss/owl-carousel/_owl.scss */
   75% {
     opacity: .5;
     -moz-transform: translateZ(-500px) translateX(-200%); }
 
-  /* line 172, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 172, ../scss/owl-carousel/_owl.scss */
   100% {
     opacity: .5;
     -moz-transform: translateZ(-500px) translateX(-200%); } }
 
 @keyframes backSlideOut {
-  /* line 175, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 175, ../scss/owl-carousel/_owl.scss */
   25% {
     opacity: .5;
     transform: translateZ(-500px); }
 
-  /* line 176, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 176, ../scss/owl-carousel/_owl.scss */
   75% {
     opacity: .5;
     transform: translateZ(-500px) translateX(-200%); }
 
-  /* line 177, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 177, ../scss/owl-carousel/_owl.scss */
   100% {
     opacity: .5;
     transform: translateZ(-500px) translateX(-200%); } }
 
 @-webkit-keyframes backSlideIn {
-  /* line 180, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 180, ../scss/owl-carousel/_owl.scss */
   0%, 25% {
     opacity: .5;
     -webkit-transform: translateZ(-500px) translateX(200%); }
 
-  /* line 181, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 181, ../scss/owl-carousel/_owl.scss */
   75% {
     opacity: .5;
     -webkit-transform: translateZ(-500px); }
 
-  /* line 182, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 182, ../scss/owl-carousel/_owl.scss */
   100% {
     opacity: 1;
     -webkit-transform: translateZ(0) translateX(0); } }
 
 @-moz-keyframes backSlideIn {
-  /* line 185, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 185, ../scss/owl-carousel/_owl.scss */
   0%, 25% {
     opacity: .5;
     -moz-transform: translateZ(-500px) translateX(200%); }
 
-  /* line 186, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 186, ../scss/owl-carousel/_owl.scss */
   75% {
     opacity: .5;
     -moz-transform: translateZ(-500px); }
 
-  /* line 187, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 187, ../scss/owl-carousel/_owl.scss */
   100% {
     opacity: 1;
     -moz-transform: translateZ(0) translateX(0); } }
 
 @keyframes backSlideIn {
-  /* line 190, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 190, ../scss/owl-carousel/_owl.scss */
   0%, 25% {
     opacity: .5;
     transform: translateZ(-500px) translateX(200%); }
 
-  /* line 191, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 191, ../scss/owl-carousel/_owl.scss */
   75% {
     opacity: .5;
     transform: translateZ(-500px); }
 
-  /* line 192, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 192, ../scss/owl-carousel/_owl.scss */
   100% {
     opacity: 1;
     transform: translateZ(0) translateX(0); } }
 
 @-webkit-keyframes scaleToFade {
-  /* line 195, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 195, ../scss/owl-carousel/_owl.scss */
   to {
     opacity: 0;
     -webkit-transform: scale(0.8); } }
 
 @-moz-keyframes scaleToFade {
-  /* line 198, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 198, ../scss/owl-carousel/_owl.scss */
   to {
     opacity: 0;
     -moz-transform: scale(0.8); } }
 
 @keyframes scaleToFade {
-  /* line 201, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 201, ../scss/owl-carousel/_owl.scss */
   to {
     opacity: 0;
     transform: scale(0.8); } }
 
 @-webkit-keyframes goDown {
-  /* line 204, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 204, ../scss/owl-carousel/_owl.scss */
   from {
     -webkit-transform: translateY(-100%); } }
 
 @-moz-keyframes goDown {
-  /* line 207, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 207, ../scss/owl-carousel/_owl.scss */
   from {
     -moz-transform: translateY(-100%); } }
 
 @keyframes goDown {
-  /* line 210, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 210, ../scss/owl-carousel/_owl.scss */
   from {
     transform: translateY(-100%); } }
 
 @-webkit-keyframes scaleUpFrom {
-  /* line 214, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 214, ../scss/owl-carousel/_owl.scss */
   from {
     opacity: 0;
     -webkit-transform: scale(1.5); } }
 
 @-moz-keyframes scaleUpFrom {
-  /* line 217, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 217, ../scss/owl-carousel/_owl.scss */
   from {
     opacity: 0;
     -moz-transform: scale(1.5); } }
 
 @keyframes scaleUpFrom {
-  /* line 220, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 220, ../scss/owl-carousel/_owl.scss */
   from {
     opacity: 0;
     transform: scale(1.5); } }
 
 @-webkit-keyframes scaleUpTo {
-  /* line 224, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 224, ../scss/owl-carousel/_owl.scss */
   to {
     opacity: 0;
     -webkit-transform: scale(1.5); } }
 
 @-moz-keyframes scaleUpTo {
-  /* line 227, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 227, ../scss/owl-carousel/_owl.scss */
   to {
     opacity: 0;
     -moz-transform: scale(1.5); } }
 
 @keyframes scaleUpTo {
-  /* line 230, lib/scss/derijn/../owl-carousel/_owl.scss */
+  /* line 230, ../scss/owl-carousel/_owl.scss */
   to {
     opacity: 0;
     transform: scale(1.5); } }
@@ -3653,13 +3662,13 @@ article {
 * 	Owl Carousel Owl Demo Theme 
 *	v1.24
 */
-/* line 6, lib/scss/derijn/../owl-carousel/_owltheme.scss */
+/* line 6, ../scss/owl-carousel/_owltheme.scss */
 .owl-theme .owl-controls {
   margin-top: 10px;
   text-align: center; }
 
 /* Styling Next and Prev buttons */
-/* line 13, lib/scss/derijn/../owl-carousel/_owltheme.scss */
+/* line 13, ../scss/owl-carousel/_owltheme.scss */
 .owl-theme .owl-controls .owl-buttons div {
   color: #FFF;
   display: inline-block;
@@ -3679,7 +3688,7 @@ article {
 
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
-/* line 30, lib/scss/derijn/../owl-carousel/_owltheme.scss */
+/* line 30, ../scss/owl-carousel/_owltheme.scss */
 .owl-theme .owl-controls.clickable .owl-buttons div:hover {
   filter: Alpha(Opacity=100);
   /*IE7 fix*/
@@ -3687,14 +3696,14 @@ article {
   text-decoration: none; }
 
 /* Styling Pagination*/
-/* line 38, lib/scss/derijn/../owl-carousel/_owltheme.scss */
+/* line 38, ../scss/owl-carousel/_owltheme.scss */
 .owl-theme .owl-controls .owl-page {
   display: inline-block;
   zoom: 1;
   *display: inline;
   /*IE7 life-saver */ }
 
-/* line 43, lib/scss/derijn/../owl-carousel/_owltheme.scss */
+/* line 43, ../scss/owl-carousel/_owltheme.scss */
 .owl-theme .owl-controls .owl-page span {
   display: block;
   width: 12px;
@@ -3708,7 +3717,7 @@ article {
   border-radius: 20px;
   background: #869791; }
 
-/* line 57, lib/scss/derijn/../owl-carousel/_owltheme.scss */
+/* line 57, ../scss/owl-carousel/_owltheme.scss */
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
   filter: Alpha(Opacity=100);
@@ -3716,7 +3725,7 @@ article {
   opacity: 1; }
 
 /* If PaginationNumbers is true */
-/* line 64, lib/scss/derijn/../owl-carousel/_owltheme.scss */
+/* line 64, ../scss/owl-carousel/_owltheme.scss */
 .owl-theme .owl-controls .owl-page span.owl-numbers {
   height: auto;
   width: auto;
@@ -3728,7 +3737,7 @@ article {
   border-radius: 30px; }
 
 /* preloading images */
-/* line 76, lib/scss/derijn/../owl-carousel/_owltheme.scss */
+/* line 76, ../scss/owl-carousel/_owltheme.scss */
 .owl-item.loading {
   min-height: 150px;
   background: url(AjaxLoader.gif) no-repeat center center; }

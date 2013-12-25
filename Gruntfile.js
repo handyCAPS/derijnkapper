@@ -68,11 +68,11 @@ module.exports = function(grunt) {
       },
       sass: {
         files: '**/*.scss',
-        tasks: ['sass:dev']
+        tasks: ['sass:dev', 'sass:wordpress']
       },
       views: {
-        files: 'lib/html/**/*.{html,php}',
-        tasks: ['htmlmin:dist']
+        files: ['lib/html/**/*.html', 'lib/php/**/*.php'],
+        tasks: ['htmlmin:dist', 'htmlmin:wordpress']
       },
       options: {
           livereload: true
@@ -103,6 +103,19 @@ module.exports = function(grunt) {
           dest: 'dist/css',
           ext: '.css'
         }]
+      },
+      wordpress: {
+        options: {
+          banner: '<%= banner %>',
+          style: 'compressed'
+        },
+        files: [{
+          expand: true,
+          cwd: 'lib/scss',
+          src: '**/*.scss',
+          dest: 'dist/<%= pkg.wp-folder %>/css',
+          ext: '.css'
+        }]
       }
     },
     htmlmin: {
@@ -116,6 +129,28 @@ module.exports = function(grunt) {
           cwd: 'lib/html',
           src: ['**/*.html'],
           dest: 'dist/html'
+        }]
+      },
+      php: {
+        options: {
+          collapseWhitespace: true
+        },
+        files: [{
+          expand: true,
+          cwd: 'lib/php',
+          src: ['**/*.php'],
+          dest: 'dist/php'
+        }]
+      },
+      wordpress: {
+        options: {
+          collapseWhitespace: true
+        },
+        files: [{
+          expand: true,
+          cwd: 'lib/php',
+          src: ['**/*.php'],
+          dest: 'dist/<%= pkg.wp-folder %>'
         }]
       }
     },

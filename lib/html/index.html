@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>De Rijn</title>
+	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans|Roboto+Slab">
 	<link rel="stylesheet" href="../../lib/css/style.css">
 </head>
@@ -32,25 +33,57 @@
 			<h2>Titel H2</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, vel, est, aut molestias corporis animi soluta praesentium doloremque esse cumque ut totam ipsum minus nam architecto ea ab mollitia accusamus sed repellendus. Est, quasi obcaecati nihil expedita fugiat. Quae, nobis.</p>
 		</article>
-		<div class="blue-back wrapper owl-carousel" id="frontSlideWrapper">
-			<div class="img-wrap">
-				<img src="../images/image_1.jpeg" alt="">
-			</div><!--  end img-wrap  -->
-			<div class="img-wrap">
-				<img src="../images/image_2.jpeg" alt="">
-			</div><!--  end img-wrap  -->
-		</div><!--  end caroussel-wrapper  -->
+		<div class="blue-back wrapper owl-carousel peeled reltv" id="frontSlideWrapper">
+			<div class="frontslide-item reltv">
+				<div class="img-wrap">
+					<img class="lazyOwl" data-src="../images/image_1.jpeg" src="#" alt="">
+				</div><!--  end img-wrap  -->
+				<article class="overlay--half">
+					<h2>Titel H2</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, animi nihil officiis esse quod rerum neque asperiores unde similique beatae repellendus dolore quam maiores placeat molestiae quia ab. Ex, quae.</p>
+				</article>
+			</div><!--  end frontslide-item  -->
+			<div class="frontslide-item reltv">
+				<div class="img-wrap">
+					<img class="lazyOwl" data-src="../images/image_2.jpeg" src="#" alt="">
+				</div><!--  end img-wrap  -->
+				<article class="overlay--half">
+					<h2>Titel H2</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, id minus voluptatem libero nemo architecto at accusamus neque obcaecati cupiditate quas repudiandae dignissimos voluptatum deserunt consequuntur! Amet doloremque placeat hic.</p>
+				</article>
+			</div><!--  end frontslide-item  -->
+		</div><!--  end frontSlideWrapper  -->
 	</div><!--  main  -->
-	<div class="grid__item one-third lap-one-whole">
-		<div class="one-whole wrapper reltv sidebar-item">
+	<div class="grid__item one-third lap-one-whole sidebar">
+		<div class="one-whole wrapper reltv sidebar-item owl-carousel blue-back peeled" id="slidePostWrapper">
+		<div class="slidepost-item">
 			<div class="img-wrap">
 				<img src="//placekitten.com/200/200" alt="placeholder">
-			</div>
+			</div><!--  end img-wrap  -->
 			<article class="overlay">
 				<h2>Slidepost</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quibusdam accusantium quo praesentium nostrum id velit ipsum et voluptate saepe.</p>
 			</article>
-		</div><!--  end wrapper  -->
+		</div><!--  end slidepost-item -->
+		<div class="slidepost-item">
+			<div class="img-wrap">
+				<img src="//placekitten.com/200/200" alt="placeholder">
+			</div><!--  end img-wrap  -->
+			<article class="overlay">
+				<h2>Slidepost</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quibusdam accusantium quo praesentium nostrum id velit ipsum et voluptate saepe.</p>
+			</article>
+		</div><!--  end slidepost-item -->
+		<div class="slidepost-item">
+			<div class="img-wrap">
+				<img src="//placekitten.com/200/200" alt="placeholder">
+			</div><!--  end img-wrap  -->
+			<article class="overlay">
+				<h2>Slidepost</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, quibusdam accusantium quo praesentium nostrum id velit ipsum et voluptate saepe.</p>
+			</article>
+		</div><!--  end slidepost-item -->
+		</div><!--  end sliderPostWrapper  -->
 		<div class="one-whole wrapper sidebar-item">
 			<article class="peeled">
 				<h2>Openingstijden</h2>
@@ -130,7 +163,6 @@
 </div><!--  end outerWrap  -->
 
 <script src="../../bower_components/jquery/jquery.min.js"></script>
-<!-- <script src="../../bower_components/owlcarousel/owl-carousel/owl.carousel.js"></script> -->
 <script src="../js/nieuwerijn.min.js"></script>
 </body>
 </html>

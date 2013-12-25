@@ -11,6 +11,14 @@
 	overflow-y: auto;
 	margin: 0;
 }
+.overlay--half {
+	position: absolute;
+	opacity: 0.8;
+	bottom: -25px;
+		h2, h3 {
+			font-size: $step2 + rem;
+		}
+}
 .img-wrap img {
 	width: 100%;
 }
