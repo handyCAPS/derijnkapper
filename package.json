@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "description": "0.1.0",
   "main": "index.js",
-  "wp-folder": "derijnkapper",
-  "wp-folder-remote": "../wordpress/wp-content/themes/derijnkapper",
+  "wpFolder": "derijnkapper",
+  "wpFolderRemote": "../wordpress/wp-content/themes/derijnkapper",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

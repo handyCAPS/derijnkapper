@@ -28,6 +28,10 @@ module.exports = function(grunt) {
       dist: {
         src: '<%= concat.dist.dest %>',
         dest: 'dist/js/<%= pkg.name %>.min.js'
+      },
+      wordpressRemote: {
+        src: '<%= concat.dist.dest %>',
+        dest: '<%= pkg.wpFolderRemote %>/js/<%= pkg.name %>.min.js'
       }
     },
     jshint: {
@@ -68,11 +72,11 @@ module.exports = function(grunt) {
       },
       sass: {
         files: '**/*.scss',
-        tasks: ['sass:dev', 'sass:wordpress']
+        tasks: ['sass:dev', 'sass:wordpressRemote']
       },
       views: {
         files: ['lib/html/**/*.html', 'lib/php/**/*.php'],
-        tasks: ['htmlmin:dist', 'htmlmin:wordpress']
+        tasks: ['htmlmin:dist', 'htmlmin:wordpressRemote']
       },
       options: {
           livereload: true
@@ -113,7 +117,20 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'lib/scss',
           src: '**/*.scss',
-          dest: 'dist/<%= pkg.wp-folder %>/css',
+          dest: 'dist/<%= wpFolder %>/css',
+          ext: '.css'
+        }]
+      },
+      wordpressRemote: {
+        options: {
+          banner: '<%= banner %>',
+          style: 'compressed'
+        },
+        files: [{
+          expand: true,
+          cwd: 'lib/scss',
+          src: '**/*.scss',
+          dest: '<%= pkg.wpFolderRemote %>/css',
           ext: '.css'
         }]
       }
@@ -150,7 +167,18 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'lib/php',
           src: ['**/*.php'],
-          dest: 'dist/<%= pkg.wp-folder %>'
+          dest: 'dist/<%= pkg.wpFolder %>'
+        }]
+      },
+      wordpressRemote: {
+        options: {
+          collapseWhitespace: true
+        },
+        files: [{
+          expand: true,
+          cwd: 'lib/php',
+          src: ['**/*.php'],
+          dest: '<%= pkg.wpFolderRemote %>'
         }]
       }
     },

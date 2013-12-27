@@ -114,8 +114,8 @@ function derijn_homeslides() {
 add_action( 'init', 'derijn_homeslides', 0 );
 
 // Cropping uploaded images for Homeslides and Slideposts. This create a copy of all uploaded images with the specified dimensions
-add_image_size('homeslide_thumbnail', 1000, 700, true );
-add_image_size('slidepost_thumbnail', 400, 400, true );
+add_image_size('homeslide_thumbnail', 1280, 960, true );
+add_image_size('slidepost_thumbnail', 480, 640, true );
 
 // Setting the read more link to the post page
 function new_excerpt_more( $more ) {
@@ -151,8 +151,8 @@ function derijn_sidebar() {
 			'id'            => 'sidebar1',
 			'description'   => '',
 			'class'         => '',
-			'before_widget' => '<li class="widget_item">',
-			'after_widget'  => '</li>',
+			'before_widget' => '<article class="peeled">',
+			'after_widget'  => '</article>',
 			'before_title'  => '<h2 class="widgettitle">',
 			'after_title'   => '</h2>'
 		);

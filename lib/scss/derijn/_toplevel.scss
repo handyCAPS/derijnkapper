@@ -1,6 +1,6 @@
 
 html {
-	background: $grey url("../../dist/images/diagonales_decalees.png");
+	background: $grey url("../images/diagonales_decalees.png");
 	padding: 1rem 1rem 0;
 }
 body {
@@ -11,6 +11,20 @@ img {
 }
 p img {
 	display: inline-block;
+}
+a {
+	color: $linkColor;
+	text-decoration: none;
+	transition: color 0.3s ease;
+		&:hover {
+			color: lighten($linkColor, 16);
+		}
+}
+p a, table a {
+	color: $darkBlue;
+		&:hover {
+			color: lighten($darkBlue, 16);
+		}
 }
 header {
 

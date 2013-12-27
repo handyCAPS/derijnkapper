@@ -3093,7 +3093,7 @@ label,
 /**
  * She’s all yours, cap’n... Begin importing your stuff here.
  */
-/* line 60, ../scss/derijn/_vars.scss */
+/* line 63, ../scss/derijn/_vars.scss */
 ul, ol {
   list-style-position: inside; }
 
@@ -3103,7 +3103,7 @@ ul, ol {
 
 /* line 2, ../scss/derijn/_toplevel.scss */
 html {
-  background: #848484 url("../../dist/images/diagonales_decalees.png");
+  background: #848484 url("../images/diagonales_decalees.png");
   padding: 1rem 1rem 0; }
 
 /* line 6, ../scss/derijn/_toplevel.scss */
@@ -3118,25 +3118,41 @@ img {
 p img {
   display: inline-block; }
 
-/* line 24, ../scss/derijn/_toplevel.scss */
+/* line 15, ../scss/derijn/_toplevel.scss */
+a {
+  color: #c5d2d7;
+  text-decoration: none;
+  transition: color 0.3s ease; }
+  /* line 19, ../scss/derijn/_toplevel.scss */
+  a:hover {
+    color: #f5f7f8; }
+
+/* line 23, ../scss/derijn/_toplevel.scss */
+p a, table a {
+  color: #263a55; }
+  /* line 25, ../scss/derijn/_toplevel.scss */
+  p a:hover, table a:hover {
+    color: #3f608d; }
+
+/* line 38, ../scss/derijn/_toplevel.scss */
 article {
   margin-bottom: 24px; }
 
-/* line 27, ../scss/derijn/_toplevel.scss */
+/* line 41, ../scss/derijn/_toplevel.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", "Cherry Swash", serif; }
 
-/* line 30, ../scss/derijn/_toplevel.scss */
+/* line 44, ../scss/derijn/_toplevel.scss */
 table {
   background-color: #f9f9f9;
   margin-bottom: 0.38198rem; }
-  /* line 33, ../scss/derijn/_toplevel.scss */
+  /* line 47, ../scss/derijn/_toplevel.scss */
   table caption {
     color: #f9f9f9;
     text-align: left;
     font-size: 1.618rem;
     font-family: "Roboto Slab", "Cherry Swash", serif; }
-  /* line 39, ../scss/derijn/_toplevel.scss */
+  /* line 53, ../scss/derijn/_toplevel.scss */
   table td {
     border: 1px solid #848484;
     padding: 0.38198rem; }
@@ -3146,7 +3162,10 @@ table {
   padding: 1rem;
   margin: 2.61792rem 0.61805rem 0;
   text-align: center; }
-  /* line 7, ../scss/derijn/_topnav.scss */
+  /* line 6, ../scss/derijn/_topnav.scss */
+  .topnav li ul {
+    display: none; }
+  /* line 10, ../scss/derijn/_topnav.scss */
   .topnav li:hover:after, .topnav li.current-menu-item:after {
     display: block;
     content: '';
@@ -3156,18 +3175,21 @@ table {
     height: 103px;
     width: 150%;
     background-color: #263a55;
-    z-index: -1; }
-  /* line 19, ../scss/derijn/_topnav.scss */
+    z-index: -1;
+    -webkit-box-shadow: 0 5px 5px -5px #adadad;
+    -moz-box-shadow: 0 5px 5px -5px #adadad;
+    box-shadow: 0 5px 5px -5px #adadad; }
+  /* line 25, ../scss/derijn/_topnav.scss */
   .topnav li.current-menu-item:hover:after {
     display: none; }
-  /* line 22, ../scss/derijn/_topnav.scss */
+  /* line 28, ../scss/derijn/_topnav.scss */
   .topnav li a {
     text-decoration: none;
     color: #f9f9f9;
     font-size: 1.2rem;
     text-shadow: 0.4px 0.8px 0.4px #1f2921; }
 
-/* line 31, ../scss/derijn/_topnav.scss */
+/* line 37, ../scss/derijn/_topnav.scss */
 #navWrap {
   margin-bottom: -1.618rem; }
 

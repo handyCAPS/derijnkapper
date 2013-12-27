@@ -3,6 +3,9 @@
 		padding: $step1 + rem;
 		margin: $step3 + rem $step-1 + rem 0;
 		text-align: center;
+			ul {
+				display: none;
+			}
 			&:hover, &.current-menu-item {
 				&:after {
 					display: block;
@@ -14,6 +17,9 @@
 					width: 150%;
 					background-color: $darkBlue;
 					z-index: -1;
+					-webkit-box-shadow: 0 5px 5px -5px lighten($grey, 16);
+					-moz-box-shadow: 0 5px 5px -5px lighten($grey, 16);
+					box-shadow: 0 5px 5px -5px lighten($grey, 16);
 				}
 			}
 			&.current-menu-item:hover:after {

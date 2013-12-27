@@ -1,4 +1,4 @@
-/*! nieuwerijn - v0.0.0 - 2013-12-25
+/*! nieuwerijn - v0.0.0 - 2013-12-27
 * Copyright (c) 2013 ; Licensed  */
 if ( typeof Object.create !== "function" ) {
 	Object.create = function( obj ) {
@@ -1472,6 +1472,6 @@ $(document).ready(function() {
 	$('#slidePostWrapper').owlCarousel({
 		singleItem: true,
 		autoPlay: 8000,
-		stopOnHover: true,
+		stopOnHover: true
 	});
 });
