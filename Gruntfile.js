@@ -43,7 +43,7 @@ module.exports = function(grunt) {
       },
       wordpressRemote: {
         src: '<%= concat.dist.dest %>',
-        dest: '<%= pkg.wp.remote %>themes/<%= wpFolder %>/js/<%= pkg.name %>.min.js'
+        dest: '<%= pkg.wp.remote %>/themes/<%= wpFolder %>/js/<%= pkg.name %>.min.js'
       },
       wpPlugins: {
         files: [{
