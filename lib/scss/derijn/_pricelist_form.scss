@@ -1,0 +1,42 @@
+.pricelist-form {
+		fieldset {
+			overflow: hidden;
+			display: inline-block;
+			min-width: 22em;
+			border: 1px solid $grey;
+			border-radius: 3px;
+			padding: $step-1 + rem;
+			background-color: darken(#F1F1F1, 6);
+			-webkit-box-shadow: 0px 1.6px 3px darken(#F1F1F1, 40);
+			-moz-box-shadow: 0px 1.6px 3px darken(#F1F1F1, 40);
+			box-shadow: 0px 1.6px 3px darken(#F1F1F1, 40);
+		}
+		label, input[type='text'] {
+			margin: $step-3 + rem;
+			vertical-align: middle;
+			position: relative;
+		}
+		input[type='submit'] {
+			float: right;
+			margin-top: $step1 + rem;
+		}
+		label {
+			display: inline-block;
+			width: 5rem;
+			text-align: right;
+		}
+		.euro {
+			box-sizing: border-box;
+			vertical-align: middle;
+			display: inline-block;
+			position: relative;
+			text-align: center;
+			left: 11px;
+			padding-top: 3px;
+			width: 24px;
+			height: 22px;
+			background-color: #1E8CBE;
+			z-index: 2;
+			color: $white;
+		}
+}

@@ -4,7 +4,7 @@
 	<div class="article-wrapper">
 	<?php if(have_posts()): while(have_posts()): the_post(); ?>
 		<article class="peeled">
-			<h2><?php the_title(); ?></h2>
+			<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
 			<?php
 			the_content();
 			edit_post_link('Bewerken');
@@ -40,7 +40,7 @@
 					?>" src="#" alt="">
 				</div><!--  end img-wrap  -->
 				<article class="overlay--half">
-					<h2><?php the_title(); ?></h2>
+					<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
 					<?php the_excerpt();
 					edit_post_link('Bewerken');
 					 ?>

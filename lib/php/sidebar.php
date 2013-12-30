@@ -13,10 +13,9 @@
 				} else {
 					echo THEMEPATH . '/images/image_1.jpeg';
 				 }?>" alt="placeholder">
-				}
 			</div><!--  end img-wrap  -->
 			<article class="overlay">
-				<h2><?php the_title(); ?></h2>
+				<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
 				<?php
 				the_excerpt();
 				edit_post_link('Bewerken');

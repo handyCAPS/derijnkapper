@@ -10,6 +10,10 @@ module.exports = function(grunt) {
       '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
       '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
       ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
+    wpFolder: '<%= pkg.wp.folder %>',
+    wpRemote: '<%= pkg.wp.remote %>',
+    wpPluginFolder: '<%= pkg.wp.pluginFolder %>',
+
     // Task configuration.
     concat: {
       options: {
@@ -19,6 +23,14 @@ module.exports = function(grunt) {
       dist: {
         src: ['bower_components/owlcarousel/owl-carousel/owl.carousel.js','lib/js/<%= pkg.name %>.js'],
         dest: 'dist/js/<%= pkg.name %>.js'
+      },
+      wpPlugins: {
+        files: [{
+          expand: true,
+          cwd: 'lib/<%= wpPluginFolder %>/**/js',
+          src: '**/*.js',
+          dest: 'dist/<%= wpPluginFolder %>/js'
+        }]
       }
     },
     uglify: {
@@ -31,7 +43,15 @@ module.exports = function(grunt) {
       },
       wordpressRemote: {
         src: '<%= concat.dist.dest %>',
-        dest: '<%= pkg.wpFolderRemote %>/js/<%= pkg.name %>.min.js'
+        dest: '<%= pkg.wp.remote %>themes/<%= wpFolder %>/js/<%= pkg.name %>.min.js'
+      },
+      wpPlugins: {
+        files: [{
+          expand: true,
+          cwd: 'lib/<%= pkg.wp.pluginFolder %>/**/js',
+          src: '**/*.js',
+          dest: 'dist/<%= pkg.wp.pluginFolder %>'
+        }]
       }
     },
     jshint: {
@@ -75,8 +95,8 @@ module.exports = function(grunt) {
         tasks: ['sass:dev', 'sass:wordpressRemote']
       },
       views: {
-        files: ['lib/html/**/*.html', 'lib/php/**/*.php'],
-        tasks: ['htmlmin:dist', 'htmlmin:wordpressRemote']
+        files: ['lib/html/**/*.html', 'lib/php/**/*.php', 'lib/<%= wpPluginFolder %>/**/*.php'],
+        tasks: ['htmlmin:dist', 'htmlmin:wordpressRemote', 'htmlmin:wordpressPluginRemote']
       },
       options: {
           livereload: true
@@ -117,7 +137,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'lib/scss',
           src: '**/*.scss',
-          dest: 'dist/<%= wpFolder %>/css',
+          dest: 'dist/<%= wp.folder %>/css',
           ext: '.css'
         }]
       },
@@ -167,7 +187,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'lib/php',
           src: ['**/*.php'],
-          dest: 'dist/<%= pkg.wpFolder %>'
+          dest: 'dist/<%= wpFolder %>'
         }]
       },
       wordpressRemote: {
@@ -178,7 +198,18 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'lib/php',
           src: ['**/*.php'],
-          dest: '<%= pkg.wpFolderRemote %>'
+          dest: '<%= wpRemote %>/themes/<%= wpFolder %>'
+        }]
+      },
+      wordpressPluginRemote: {
+        options: {
+          collapseWhitespace: true
+        },
+        files: [{
+          expand: true,
+          cwd: 'lib/<%= wpPluginFolder %>',
+          src: ['**/*.php'],
+          dest: '<%= wpRemote %>/plugins'
         }]
       }
     },

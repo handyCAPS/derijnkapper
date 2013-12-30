@@ -4,10 +4,21 @@
   "description": "0.1.0",
   "main": "index.js",
   "wpFolder": "derijnkapper",
-  "wpFolderRemote": "../wordpress/wp-content/themes/derijnkapper",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "wp": {
+    "folder": "derijnkapper",
+    "remote": "../wordpress/wp-content",
+    "pluginFolder": "plugins",
+    "plugins": {
+      "deRijnBonusFunctions": {
+        "folder": "derijn-bonus-functions"
+      },
+      "deRijnPricelist": {
+        "folder": "derijn-pricelist"
+      }
+    }
   },
+  "wpFolderRemote": "../wordpress/wp-content/themes/derijnkapper",
+  "wpPluginRemote": "../wordpress/wp-content/plugins",
   "author": "Tim Doppenberg",
   "license": "MIT",
   "devDependencies": {
