@@ -30,7 +30,7 @@
 			width: 200px;
 			// float: right;
 		}
-		input[type='button'] {
+		input[type='button'], input[type='submit'] {
 			float: right;
 			margin-top: $step1 + rem;
 		}

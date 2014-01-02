@@ -80,6 +80,7 @@ module.exports = function(grunt) {
         jquery: true,
         globals: {
           jQuery: true,
+          ajaxurl: true
         }
       },
       gruntfile: {

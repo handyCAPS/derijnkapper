@@ -14,12 +14,12 @@ register_activation_hook( __FILE__, 'derijn_pricelist_activation' );
 function derijn_pricelist_activation() {
 	global $wpdb;
 	$table_name = $wpdb->prefix . 'derijn_pricelist';
-	// Creating the db table 
+	// Creating the db table
 	$sql = "CREATE TABLE $table_name (
 			id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
 			name varchar(30) NOT NULL,
 			price DECIMAL(10,2) NOT NULL,
-			UNIQUE KEY id(id) 
+			UNIQUE KEY id(id)
 		)
 	";
 	return $wpdb->query($sql);
@@ -28,6 +28,7 @@ function derijn_pricelist_activation() {
 // The form to go in the backend
 function derijn_pricelist_admin_page() {
 	global $wpdb;
+	$plugin_url = plugins_url('scripts/update-pricelist.php', __FILE__ );
 	echo '<h1>Prijslijst De Rijn Kapper</h1>';
 	$pricelist_form = "
 		<form method='POST' action='' class='pricelist-form'>
@@ -35,11 +36,13 @@ function derijn_pricelist_admin_page() {
 		<legend>Prijzen toevoegen</legend>
 		<label for='dienst'>Dienst : </label>
 		<input type='text' name='dienst' id='dienst'><br>
-		<label for='prijs'>Prijs : <span class='euro'>&euro;</span></label>
-		<input type='text' name='prijs' id='prijs'><br>
-		<input type='button' id='pricelistSave' name='pricelistSave' value='Opslaan' class='button button-primary'>
+		<label for='price'>Prijs : <span class='euro'>&euro;</span></label>
+		<input type='text' name='price' id='price'><br>
+		<input type='submit' id='pricelistSave' name='pricelistSave' value='Opslaan' class='button button-primary'>
+		<input type='hidden' id='pluginUrl' value='$plugin_url'>
 		</fieldset>
 		</form>
+		<div id='load'></div>
 	";
 	echo $pricelist_form;
 
@@ -70,6 +73,22 @@ function derijn_pricelist_styles() {
 }
 add_action('admin_enqueue_scripts', 'derijn_pricelist_styles' );
 
+// Creating a custom action for the back-end ajax request
+add_action('wp_ajax_derijn_pricelist', 'derijn_update_pricelist');
 
+function derijn_update_pricelist() {
+	global $wpdb;
+	$table_name = $wpdb->prefix . 'derijn_pricelist';
+
+	$name = trim($_POST['name']);
+	$price = trim($_POST['price']);
+
+	$sql = $wpdb->prepare("	INSERT into $table_name (name, price)
+							VALUES (%s, %s)", $name, $price);
+	$wpdb->query($sql);
+
+	echo $name . ' ' . $price ;
+	die();
+}
 
 ?>
