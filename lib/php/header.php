@@ -16,7 +16,7 @@
 	<?php wp_head(); ?>
 </head>
 <body>
-<div id="outerWrap">
+<!-- <div id="outerWrap"> -->
 <header role="banner">
 	<div class="grid" id="headerWrap">
 		<div id="logo" class="grid__item one-sixth lap-one-third">

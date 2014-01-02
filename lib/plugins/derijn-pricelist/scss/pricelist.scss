@@ -1,4 +1,14 @@
+@import "../../../scss/derijn/vars";
+
 .pricelist-form {
+		legend {
+			background-color: saturate(lighten($darkBlue, 6), 30);
+			padding: $step-3 + rem $step-2 + rem;
+			border-radius: 3px;
+			color: $white;
+			border: 0.5px solid $grey;
+			text-shadow: 0.3px 0.3px 0.3px $black;
+		}
 		fieldset {
 			overflow: hidden;
 			display: inline-block;
@@ -16,7 +26,11 @@
 			vertical-align: middle;
 			position: relative;
 		}
-		input[type='submit'] {
+		input[type='text'] {
+			width: 200px;
+			// float: right;
+		}
+		input[type='button'] {
 			float: right;
 			margin-top: $step1 + rem;
 		}
@@ -32,10 +46,11 @@
 			position: relative;
 			text-align: center;
 			left: 11px;
+			top: 0.5px;
 			padding-top: 3px;
 			width: 24px;
-			height: 22px;
-			background-color: #1E8CBE;
+			height: 21px;
+			background-color: $backend-blue;
 			z-index: 2;
 			color: $white;
 		}

@@ -123,7 +123,7 @@ add_action( 'init', 'derijn_homeslides', 0 );
 
 // Cropping uploaded images for Homeslides and Slideposts. This create a copy of all uploaded images with the specified dimensions
 add_image_size('homeslide_thumbnail', 1280, 960, true );
-add_image_size('slidepost_thumbnail', 480, 640, true );
+add_image_size('slidepost_thumbnail', 640, 480, true );
 
 // Setting the read more link to the post page
 function new_excerpt_more( $more ) {

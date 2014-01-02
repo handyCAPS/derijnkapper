@@ -9,6 +9,7 @@
 * License: MIT
 */
 
+// The form to go in the backend
 function derijn_pricelist_admin_page() {
 	echo '<h1>Prijslijst De Rijn Kapper</h1>';
 	$pricelist_form = "
@@ -19,13 +20,14 @@ function derijn_pricelist_admin_page() {
 		<input type='text' name='dienst' id='dienst'><br>
 		<label for='prijs'>Prijs : <span class='euro'>&euro;</span></label>
 		<input type='text' name='prijs' id='prijs'><br>
-		<input type='submit' value='Opslaan' class='button button-primary'>
+		<input type='button' id='pricelistSave' name='pricelistSave' value='Opslaan' class='button button-primary'>
 		</fieldset>
 		</form>
 	";
 	echo $pricelist_form;
 }
 
+// Registering the admin page
 function derijn_pricelist() {
 	$page_title = 'Prijslijst';
 	$menu_title = 'Prijslijst';
@@ -37,4 +39,14 @@ function derijn_pricelist() {
 	add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $function, $icon_url, $position );
 }
 add_action('admin_menu', 'derijn_pricelist' );
+
+// Function to register the admin styles
+function derijn_pricelist_styles() {
+	wp_register_style('pricelist_admin', plugins_url( 'scss/pricelist.css', __FILE__ ), array(), 'all' );
+	wp_enqueue_style('pricelist_admin' );
+
+	wp_register_script('derijn_pricelist', plugins_url( 'js/pricelist.js', __FILE__ ), array(), false );
+	wp_enqueue_script('derijn_pricelist');
+}
+add_action('admin_enqueue_scripts', 'derijn_pricelist_styles' );
 ?>
