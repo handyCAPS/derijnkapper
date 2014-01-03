@@ -28,6 +28,7 @@ function derijn_pricelist_activation() {
 // The form to go in the backend
 function derijn_pricelist_admin_page() {
 	global $wpdb;
+	$table_name = $wpdb->prefix . 'derijn_pricelist';
 	$plugin_url = plugins_url('scripts/update-pricelist.php', __FILE__ );
 	echo '<h1>Prijslijst De Rijn Kapper</h1>';
 	$pricelist_form = "
@@ -39,12 +40,26 @@ function derijn_pricelist_admin_page() {
 		<label for='price'>Prijs : <span class='euro'>&euro;</span></label>
 		<input type='text' name='price' id='price'><br>
 		<input type='submit' id='pricelistSave' name='pricelistSave' value='Opslaan' class='button button-primary'>
-		<input type='hidden' id='pluginUrl' value='$plugin_url'>
 		</fieldset>
 		</form>
 		<div id='load'></div>
 	";
+
+	$sql = "SELECT * FROM $table_name";
+
+	$price_array = $wpdb->get_results($sql);
+
+	$price_table = "<ul>";
+
+	foreach ($price_array as $price) {
+		$price_table .= "<li>$price->name</li>";
+	}
+
+	$price_table .= "</ul>";
+
 	echo $pricelist_form;
+
+	echo $price_table;
 
 
 }
