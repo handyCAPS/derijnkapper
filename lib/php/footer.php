@@ -1,5 +1,19 @@
 	<article>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, amet, odit, ut, id sint veniam perspiciatis enim quod fugiat adipisci nemo cumque reiciendis eveniet sit recusandae voluptas qui veritatis blanditiis deleniti quam modi optio iure aliquid sunt corporis et tempore similique totam nobis explicabo expedita voluptate fugit repellendus. Quaerat, ducimus.</p>
+		<div class="grid__item two-thirds">
+			<h2>Herenkapper de Rijn</h2>
+			<h3>Bloemhofstraat 41</h3>
+			<h3>Alphen a/d Rijn<h3>
+			<h3>06 17 17 72 79</h3>
+		</div>
+		<div class="grid__item one-third">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Nieuws</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Prijzen</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
 	</article>
 </footer>
 

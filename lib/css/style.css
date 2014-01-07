@@ -3229,10 +3229,25 @@ article {
   .sidebar-item ul li {
     width: 100%;
     border-bottom: 1px dotted #1f2921; }
+    /* line 15, ../scss/derijn/_sidebar.scss */
+    .sidebar-item ul li:not(:first-of-type) {
+      margin: 1rem 0; }
 
 /* line 2, ../scss/derijn/_footer.scss */
 .page-footer article {
   margin-bottom: -24px; }
+/* line 5, ../scss/derijn/_footer.scss */
+.page-footer h3 {
+  color: #c5d2d7;
+  text-shadow: 1.4px 1.4px 0px #1f2921; }
+/* line 9, ../scss/derijn/_footer.scss */
+.page-footer ul {
+  padding: 0;
+  margin: 0 0 0 1rem;
+  list-style: none; }
+  /* line 13, ../scss/derijn/_footer.scss */
+  .page-footer ul li {
+    margin-bottom: 1.618rem; }
 
 /* line 1, ../scss/derijn/_derijn-helpers.scss */
 .reltv {

@@ -12,6 +12,9 @@
 				@extend .cf;
 				width: 100%;
 				border-bottom: 1px dotted $black;
+					&:not(:first-of-type) {
+						margin: $step1 + rem 0;
+					}
 			}
 	}
 }
