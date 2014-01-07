@@ -34,29 +34,37 @@ function derijn_pricelist_admin_page() {
 	echo '<h1>Prijslijst De Rijn Kapper</h1>';
 	$pricelist_form = "
 		<form method='POST' action='' class='pricelist-form'>
-		<fieldset>
-		<legend>Prijzen toevoegen</legend>
+		<fieldset 'pricelist__fieldset'>
+		<legend class='pricelist__legend'>Prijzen toevoegen</legend>
 		<label for='dienst'>Dienst : </label>
 		<input type='text' name='dienst' id='dienst'><br>
 		<label for='price'>Prijs : <span class='euro'>&euro;</span></label>
 		<input type='text' name='price' id='price'><br>
+		<label for='order'>Volgorde</label>
+		<input type='number' name='order' id='order' class='push-down'><br>
 		<input type='submit' id='pricelistSave' name='pricelistSave' value='Opslaan' class='button button-primary'>
 		</fieldset>
 		</form>
 		<div id='load'></div>
 	";
 
-	$sql = $wpdb->prepare("SELECT * FROM %s", $table_name);
+	$sql = "SELECT * FROM $table_name ORDER BY ordering";
 
 	$price_array = $wpdb->get_results($sql);
 
-	$price_table = "<ul>";
+	$price_table = "<div id='priceTableUpdate' class='left'><form class='pricelist-form'><fieldset 'pricelist__fieldset'><legend class='pricelist__legend'>Prijzen aanpassen</legend>";
 
 	foreach ($price_array as $price) {
-		$price_table .= "<li>$price->name</li>";
+		$id = $price->id;
+		$name = $price->name;
+		$ordering = $price->ordering;
+		$name_id = $id . '-name';
+		$price_id = $id . '-price';
+		$ordering_id = $id . '-ordering';
+		$price_table .= "<div id='$id'><input type='text' name='$name_id' id='$name_id' value='$name'><input type='text' name='$price_id' id='$price_id' value='&euro; $price->price' class='medium'><input type='number' name='$ordering_id' id='$ordering_id' value='$ordering'><div class='update-button right button button-primary'>Update</div></div> ";
 	}
 
-	$price_table .= "</ul>";
+	$price_table .= "</fieldset></form></div>";
 
 	echo $pricelist_form;
 
@@ -98,9 +106,10 @@ function derijn_update_pricelist() {
 
 	$name = trim($_POST['name']);
 	$price = trim($_POST['price']);
+	$ordering = trim($_POST['ordering']);
 
-	$sql = $wpdb->prepare("	INSERT into $table_name (name, price)
-							VALUES (%s, %s)", $name, $price);
+	$sql = $wpdb->prepare("	INSERT into $table_name (name, price, ordering)
+							VALUES (%s, %s, %s)", $name, $price, $ordering);
 	$wpdb->query($sql);
 
 	echo $name . ' ' . $price ;
@@ -180,7 +189,8 @@ class De_Rijn_Prijzen_Widget extends WP_Widget {
     	global $wpdb;
     	$table_name = $wpdb->prefix . 'derijn_pricelist';
 
-    	$sql = $wpdb->prepare("SELECT * FROM %s", $table_name);
+    	$sql = "SELECT name, price FROM $table_name ORDER BY ordering";
+    	// $sql = $wpdb->prepare("SELECT name, price FROM %s ORDER BY ordering", $table_name);
     	$result = $wpdb->get_results($sql);
 
     	$table = '<ul>';
@@ -189,7 +199,7 @@ class De_Rijn_Prijzen_Widget extends WP_Widget {
     		$price = str_replace('.', ',', $prices_array->price);
     		$name = str_replace('.', ',', $prices_array->name);
 
-    		$table .= "<li><div class='dienst dotlist__item'>$name</div><div class='price dotlist__item'>$price</div></li>";
+    		$table .= "<li><div class='dienst dotlist__item'>$name</div><div class='price dotlist__item'>&euro; $price</div></li>";
     	}
     	$table .= '</ul>';
 

@@ -1,3 +1,3 @@
-/*! nieuwerijn - v0.0.0 - 2014-01-03
+/*! nieuwerijn - v0.0.0 - 2014-01-07
 * Copyright (c) 2014 ; Licensed  */
-!function(a){a(document).ready(function(){function b(b){b.preventDefault();var c=a("#dienst")[0],d=a("#price")[0],e=c.value,f=d.value,g={action:"derijn_pricelist",name:e,price:f};a.post(ajaxurl,g,function(b){a("#load").html(b)}),c.value="",d.value=""}var c=a("#pricelistSave");c.click(b)})}(jQuery);
+!function(a){a(document).ready(function(){function b(b){b.preventDefault();var c=a("#dienst")[0],d=a("#price")[0],e=a("#order")[0],f=c.value,g=d.value,h=e.value,i={action:"derijn_pricelist",name:f,price:g,ordering:h};a.post(ajaxurl,i,function(b){a("#load").html(b)}),c.value="",d.value="",e.value=""}var c=a("#pricelistSave");c.click(b),a(".update-button").click(function(){var b=a(this).parent()[0].id,c="#"+b+"-name",d="#"+b+"-price",e="#"+b+"-ordering",f=a(c)[0].value,g=a(d)[0].value,h=a(e)[0].value,i={action:"derijn_pricelist_update",name:f,price:g,ordering:h,id:b};a.post(ajaxurl,i,function(b){a("#load").html(b)})})})}(jQuery);
