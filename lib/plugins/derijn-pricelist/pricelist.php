@@ -47,7 +47,7 @@ function derijn_pricelist_admin_page() {
 		</form>
 	";
 
-	
+
 
 	echo $pricelist_form;
 	echo "<div id='priceTableUpdate' class='left'>";
@@ -133,17 +133,16 @@ function derijn_update_pricelist() {
 
 	$name = trim($_POST['name']);
 	$price = trim($_POST['price']);
-	$price = preg_replace("/[^0-9]/","", $price);
+	$price = preg_replace("/[^0-9][^\.]/","", $price);
 	$ordering = trim($_POST['ordering']);
 	$id = trim($_POST['id']);
 
 	$sql = $wpdb->prepare("UPDATE $table_name SET name = %s, price = %d, ordering = %s  WHERE id = %d", $name, $price, $ordering, $id);
 
-	$result = $wpdb->get_results($sql);
+	$wpdb->get_results($sql);
 
 	echo get_the_pricelist();
-	echo var_dump($result);
-	echo $name . ' ' . $price . ' ' . $ordering . ' ' . $id . ' ' . $sql;
+
 	die();
 
 }

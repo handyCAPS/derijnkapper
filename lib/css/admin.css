@@ -1,3 +1,8 @@
-/* line 65, lib/scss/derijn/_vars.scss */
+/* line 65, ../scss/derijn/_vars.scss */
 ul, ol {
   list-style-position: inside; }
+
+/* line 4, ../scss/admin.scss */
+.ple {
+  box-shadow: 2px 2px 2px #1f2921;
+  transform: rotate(3deg); }

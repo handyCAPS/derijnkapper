@@ -101,7 +101,7 @@ module.exports = function(grunt) {
       },
       sass: {
         files: '**/*.scss',
-        tasks: ['sass']
+        tasks: ['sass', 'autoprefixer']
       },
       views: {
         files: ['lib/html/**/*.html', 'lib/php/**/*.php', 'lib/<%= wpPluginFolder %>/**/*.php'],
@@ -263,6 +263,20 @@ module.exports = function(grunt) {
           dest: 'dist/images'
         }]
       }
+    },
+    autoprefixer: {
+      options: {
+        diff: true
+      },
+      dist: {
+        src: 'dist/css/**/*.css'
+      },
+      wordpress: {
+        src: 'dist/<%= wpFolder %>/css/**/*.css'
+      },
+      wordpressRemote: {
+        src: '<%= wpRemote %>/themes/<%= wpFolder %>/css/**/*.css'
+      }
     }
   });
 
@@ -274,6 +288,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-autoprefixer');
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'imagemin:dist', 'sass:dist']);
