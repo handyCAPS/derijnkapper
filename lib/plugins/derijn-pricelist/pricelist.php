@@ -45,31 +45,14 @@ function derijn_pricelist_admin_page() {
 		<input type='submit' id='pricelistSave' name='pricelistSave' value='Opslaan' class='button button-primary'>
 		</fieldset>
 		</form>
-		<div id='load'></div>
 	";
 
-	$sql = "SELECT * FROM $table_name ORDER BY ordering";
-
-	$price_array = $wpdb->get_results($sql);
-
-	$price_table = "<div id='priceTableUpdate' class='left'><form class='pricelist-form'><fieldset 'pricelist__fieldset'><legend class='pricelist__legend'>Prijzen aanpassen</legend>";
-
-	foreach ($price_array as $price) {
-		$id = $price->id;
-		$name = $price->name;
-		$ordering = $price->ordering;
-		$name_id = $id . '-name';
-		$price_id = $id . '-price';
-		$ordering_id = $id . '-ordering';
-		$price_table .= "<div id='$id'><input type='text' name='$name_id' id='$name_id' value='$name'><input type='text' name='$price_id' id='$price_id' value='&euro; $price->price' class='medium'><input type='number' name='$ordering_id' id='$ordering_id' value='$ordering'><div class='update-button right button button-primary'>Update</div></div> ";
-	}
-
-	$price_table .= "</fieldset></form></div>";
+	
 
 	echo $pricelist_form;
-
-	echo $price_table;
-
+	echo "<div id='priceTableUpdate' class='left'>";
+	echo get_the_pricelist();
+	echo "</div>";
 
 }
 
@@ -97,10 +80,38 @@ function derijn_pricelist_styles() {
 }
 add_action('admin_enqueue_scripts', 'derijn_pricelist_styles' );
 
-// Creating a custom action for the back-end ajax request
-add_action('wp_ajax_derijn_pricelist', 'derijn_update_pricelist');
+// Creating custom action for the back-end ajax requests
+add_action('wp_ajax_derijn_pricelist', 'derijn_insert_pricelist');
+add_action('wp_ajax_derijn_update_pricelist', 'derijn_update_pricelist');
 
-function derijn_update_pricelist() {
+function get_the_pricelist() {
+
+	global $wpdb;
+
+	$table_name = $wpdb->prefix . 'derijn_pricelist';
+    $sql = "SELECT * FROM $table_name ORDER BY ordering";
+
+	$price_array = $wpdb->get_results($sql);
+
+	$price_table = "<form class='pricelist-form' method='POST'><fieldset 'pricelist__fieldset'><legend class='pricelist__legend'>Prijzen aanpassen</legend>";
+
+	foreach ($price_array as $price) {
+		$id = $price->id;
+		$name = $price->name;
+		$ordering = $price->ordering;
+		$prijs = str_replace('.', ',', $price->price);
+		$name_id = $id . '-name';
+		$price_id = $id . '-price';
+		$ordering_id = $id . '-ordering';
+		$price_table .= "<div id='$id'><input type='text' name='$name_id' id='$name_id' value='$name'><input type='text' name='$price_id' id='$price_id' value='&euro; $prijs' class='medium'><input type='number' name='$ordering_id' id='$ordering_id' value='$ordering'><div class='update-button right button button-primary'>Update</div></div> ";
+	}
+
+	$price_table .= "</fieldset></form>";
+
+	return $price_table;
+    }
+
+function derijn_insert_pricelist() {
 	global $wpdb;
 	$table_name = $wpdb->prefix . 'derijn_pricelist';
 
@@ -112,9 +123,31 @@ function derijn_update_pricelist() {
 							VALUES (%s, %s, %s)", $name, $price, $ordering);
 	$wpdb->query($sql);
 
-	echo $name . ' ' . $price ;
+	echo get_the_pricelist();
 	die();
 }
+
+function derijn_update_pricelist() {
+	global $wpdb;
+	$table_name = $wpdb->prefix . 'derijn_pricelist';
+
+	$name = trim($_POST['name']);
+	$price = trim($_POST['price']);
+	$price = preg_replace("/[^0-9]/","", $price);
+	$ordering = trim($_POST['ordering']);
+	$id = trim($_POST['id']);
+
+	$sql = $wpdb->prepare("UPDATE $table_name SET name = %s, price = %d, ordering = %s  WHERE id = %d", $name, $price, $ordering, $id);
+
+	$result = $wpdb->get_results($sql);
+
+	echo get_the_pricelist();
+	echo var_dump($result);
+	echo $name . ' ' . $price . ' ' . $ordering . ' ' . $id . ' ' . $sql;
+	die();
+
+}
+
 
 class De_Rijn_Prijzen_Widget extends WP_Widget {
 
@@ -149,16 +182,6 @@ class De_Rijn_Prijzen_Widget extends WP_Widget {
         echo $title;
         echo $after_title;
 
-        $price_table = "
-            <ul>
-                <li>
-                    <div class='dienst dotlist__item'>$dienst</div>
-                    <div class='price dotlist__item'>&#128; $prijs</div>
-                </li>
-            </ul>
-        ";
-
-        // echo $price_table;
         echo $this->get_the_pricelist();
 
         echo $after_widget;
@@ -197,9 +220,8 @@ class De_Rijn_Prijzen_Widget extends WP_Widget {
 
     	foreach ($result as $prices_array) {
     		$price = str_replace('.', ',', $prices_array->price);
-    		$name = str_replace('.', ',', $prices_array->name);
 
-    		$table .= "<li><div class='dienst dotlist__item'>$name</div><div class='price dotlist__item'>&euro; $price</div></li>";
+    		$table .= "<li><div class='dienst dotlist__item'>$prices_array->name</div><div class='price dotlist__item'>&euro; $price</div></li>";
     	}
     	$table .= '</ul>';
 
