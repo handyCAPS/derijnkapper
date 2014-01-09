@@ -18,7 +18,7 @@ function derijn_pricelist_activation() {
 	$sql = "CREATE TABLE $table_name (
 			id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
 			name varchar(30) NOT NULL,
-			price DECIMAL(10,2) NOT NULL,
+			price DECIMAL(4,2) NOT NULL,
 			ordering int NOT NULL,
 			UNIQUE KEY id(id)
 		)
@@ -80,9 +80,10 @@ function derijn_pricelist_styles() {
 }
 add_action('admin_enqueue_scripts', 'derijn_pricelist_styles' );
 
-// Creating custom action for the back-end ajax requests
+// Creating custom actions for the back-end ajax requests
 add_action('wp_ajax_derijn_pricelist', 'derijn_insert_pricelist');
 add_action('wp_ajax_derijn_update_pricelist', 'derijn_update_pricelist');
+add_action('wp_ajax_derijn_delete_pricelist', 'derijn_delete_pricelist');
 
 function get_the_pricelist() {
 
@@ -154,7 +155,24 @@ function derijn_update_pricelist() {
 	die();
 
 }
+function derijn_test_pricelist() {
+	echo 'kkk';
+}
+function derijn_delete_pricelist() {
+	global $wpdb;
+	$table_name = $wpdb->prefix . "derijn_pricelist";
 
+	$price_id = $_POST['priceid'];
+
+	$sql = $wpdb->prepare("DELETE FROM $table_name WHERE id = %d", $price_id);
+
+	$wpdb->query($sql);
+
+	echo get_the_pricelist();
+
+	die();
+
+}
 
 class De_Rijn_Prijzen_Widget extends WP_Widget {
 

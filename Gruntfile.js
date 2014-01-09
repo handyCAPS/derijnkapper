@@ -97,11 +97,11 @@ module.exports = function(grunt) {
       },
       lib_test: {
         files: '<%= jshint.lib_test.src %>',
-        tasks: ['jshint:lib_test', 'concat', 'uglify']
+        tasks: ['jshint:lib_test', 'concat', 'uglify:wpPluginsRemote', 'uglify:wordpressRemote']
       },
       sass: {
         files: '**/*.scss',
-        tasks: ['sass', 'autoprefixer']
+        tasks: ['sass:wordpressRemote', 'sass:wordpressPluginRemote']
       },
       views: {
         files: ['lib/html/**/*.html', 'lib/php/**/*.php', 'lib/<%= wpPluginFolder %>/**/*.php'],
@@ -291,6 +291,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'imagemin:dist', 'sass:dist']);
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'imagemin', 'sass', 'autoprefixer']);
 
 };
