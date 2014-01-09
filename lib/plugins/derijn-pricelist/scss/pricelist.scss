@@ -24,7 +24,7 @@
 			-moz-box-shadow: 0px 1.6px 3px darken(#F1F1F1, 40);
 			box-shadow: 0px 1.6px 3px darken(#F1F1F1, 40);
 		}
-		label, input[type='text'], input[type='number'], .update-button {
+		label, input[type='text'], input[type='number'], .update-button, .delete-button {
 			margin: $step-3 + rem;
 			vertical-align: middle;
 			position: relative;
@@ -49,6 +49,11 @@
 		}
 		.update-button {
 			height: 26px;
+		}
+		.delete-button {
+			height: 26px;
+			background-color: #F11;
+			color: $white;
 		}
 		label {
 			display: inline-block;

@@ -103,7 +103,14 @@ function get_the_pricelist() {
 		$name_id = $id . '-name';
 		$price_id = $id . '-price';
 		$ordering_id = $id . '-ordering';
-		$price_table .= "<div id='$id'><input type='text' name='$name_id' id='$name_id' value='$name'><input type='text' name='$price_id' id='$price_id' value='&euro; $prijs' class='medium'><input type='number' name='$ordering_id' id='$ordering_id' value='$ordering'><div class='update-button right button button-primary'>Update</div></div> ";
+		$price_table .= "
+		<div id='$id'>
+			<input type='text' name='$name_id' id='$name_id' value='$name'>
+			<input type='text' name='$price_id' id='$price_id' value='&euro; $prijs' class='medium'>
+			<input type='number' name='$ordering_id' id='$ordering_id' value='$ordering'>
+			<div class='update-button left button button-primary'>Update</div>
+			<div class='left button danger delete-button'>Delete</div>
+		</div> ";
 	}
 
 	$price_table .= "</fieldset></form>";
@@ -133,11 +140,12 @@ function derijn_update_pricelist() {
 
 	$name = trim($_POST['name']);
 	$price = trim($_POST['price']);
-	$price = preg_replace("/[^0-9][^\.]/","", $price);
+	$price = preg_replace("/[^0-9,.]/","", $price);
+	$price = preg_replace("/[,]/",".", $price);
 	$ordering = trim($_POST['ordering']);
 	$id = trim($_POST['id']);
 
-	$sql = $wpdb->prepare("UPDATE $table_name SET name = %s, price = %d, ordering = %s  WHERE id = %d", $name, $price, $ordering, $id);
+	$sql = $wpdb->prepare("UPDATE $table_name SET name = %s, price = %s, ordering = %s  WHERE id = %d", $name, $price, $ordering, $id);
 
 	$wpdb->get_results($sql);
 
