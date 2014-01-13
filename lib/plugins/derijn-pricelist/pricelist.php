@@ -15,7 +15,7 @@ function derijn_pricelist_activation() {
 	global $wpdb;
 	$table_name = $wpdb->prefix . 'derijn_pricelist';
 	// Creating the db table
-	$sql = "CREATE TABLE $table_name (
+	$sql = "CREATE TABLE IF NOT EXISTS $table_name (
 			id int PRIMARY KEY NOT NULL AUTO_INCREMENT,
 			name varchar(30) NOT NULL,
 			price DECIMAL(4,2) NOT NULL,

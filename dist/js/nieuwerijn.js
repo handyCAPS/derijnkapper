@@ -1,4 +1,4 @@
-/*! nieuwerijn - v0.0.0 - 2014-01-10
+/*! nieuwerijn - v0.0.0 - 2014-01-11
 * Copyright (c) 2014 ; Licensed  */
 if ( typeof Object.create !== "function" ) {
 	Object.create = function( obj ) {

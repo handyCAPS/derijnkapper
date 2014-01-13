@@ -291,6 +291,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-autoprefixer');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'imagemin', 'sass', 'autoprefixer']);
+  grunt.registerTask('default', ['jshint', 'htmlmin', 'concat', 'uglify', 'imagemin', 'sass', 'autoprefixer']);
 
 };

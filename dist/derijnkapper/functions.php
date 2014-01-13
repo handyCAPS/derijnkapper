@@ -23,6 +23,14 @@ function derijn_register_scripts() {
 
 add_action('wp_enqueue_scripts', 'derijn_register_scripts' );
 
+// The admin styles
+function derijn_admin_styles() {
+	wp_register_style('derijn_admin', THEMEPATH . '/css/admin.css', array(), false, 'all' );
+	wp_enqueue_style('derijn_admin');
+}
+
+add_action('admin_enqueue_scripts', 'derijn_admin_styles');
+
 // Register Custom Post Type
 function derijn_custom_post_type() {
 
@@ -45,7 +53,7 @@ function derijn_custom_post_type() {
 		'label'               => __( 'slidepost', 'derijnkapper' ),
 		'description'         => __( 'Posts die boven de pagina in de slider komen', 'derijnkapper' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'editor', 'thumbnail' ),
+		'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions' ),
 		'taxonomies'          => array(),
 		'hierarchical'        => false,
 		'public'              => true,
@@ -90,7 +98,7 @@ function derijn_homeslides() {
 		'label'               => __( 'homeslide', 'derijnkapper' ),
 		'description'         => __( 'Posts op de voorpagina in de slider komen', 'derijnkapper' ),
 		'labels'              => $slidelabels,
-		'supports'            => array( 'title', 'editor', 'thumbnail' ),
+		'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions' ),
 		'taxonomies'          => array(),
 		'hierarchical'        => false,
 		'public'              => true,
@@ -98,7 +106,7 @@ function derijn_homeslides() {
 		'show_in_menu'        => true,
 		'show_in_nav_menus'   => true,
 		'show_in_admin_bar'   => true,
-		'menu_position'       => 6,
+		'menu_position'       => 5,
 		'menu_icon'           => 'dashicons-images-alt',
 		'can_export'          => true,
 		'has_archive'         => true,
@@ -113,8 +121,9 @@ function derijn_homeslides() {
 // Hook into the 'init' action
 add_action( 'init', 'derijn_homeslides', 0 );
 
-// Cropping all images for Homeslides
-add_image_size('homeslide_thumbnail', 1000, 700, true );
+// Cropping uploaded images for Homeslides and Slideposts. This create a copy of all uploaded images with the specified dimensions
+add_image_size('homeslide_thumbnail', 1280, 960, true );
+add_image_size('slidepost_thumbnail', 640, 480, true );
 
 // Setting the read more link to the post page
 function new_excerpt_more( $more ) {
@@ -150,8 +159,8 @@ function derijn_sidebar() {
 			'id'            => 'sidebar1',
 			'description'   => '',
 			'class'         => '',
-			'before_widget' => '<li class="widget_item">',
-			'after_widget'  => '</li>',
+			'before_widget' => '<article class="peeled">',
+			'after_widget'  => '</article>',
 			'before_title'  => '<h2 class="widgettitle">',
 			'after_title'   => '</h2>'
 		);
@@ -160,3 +169,5 @@ function derijn_sidebar() {
 }
 
 add_action('widgets_init', 'derijn_sidebar' );
+
+?>
