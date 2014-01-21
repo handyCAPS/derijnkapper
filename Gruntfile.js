@@ -80,7 +80,8 @@ module.exports = function(grunt) {
         jquery: true,
         globals: {
           jQuery: true,
-          ajaxurl: true
+          ajaxurl: true,
+          require: true
         }
       },
       gruntfile: {
@@ -97,15 +98,15 @@ module.exports = function(grunt) {
       },
       lib_test: {
         files: '<%= jshint.lib_test.src %>',
-        tasks: ['jshint:lib_test', 'concat', 'uglify:wpPluginsRemote', 'uglify:wordpressRemote']
+        tasks: ['jshint:lib_test', 'concat', 'uglify']
       },
       sass: {
         files: '**/*.scss',
-        tasks: ['sass:wordpressRemote', 'sass:wordpressPluginRemote']
+        tasks: ['sass']
       },
       views: {
         files: ['lib/html/**/*.html', 'lib/php/**/*.php', 'lib/<%= wpPluginFolder %>/**/*.php'],
-        tasks: ['htmlmin:dist', 'htmlmin:wordpressRemote', 'htmlmin:wordpressPluginRemote']
+        tasks: ['htmlmin']
       },
       options: {
           livereload: true
@@ -280,15 +281,8 @@ module.exports = function(grunt) {
     }
   });
 
-  // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-htmlmin');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-autoprefixer');
+  // Autoloading all dev dependencies
+  require('load-grunt-tasks')(grunt);
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'htmlmin', 'concat', 'uglify', 'imagemin', 'sass', 'autoprefixer']);
