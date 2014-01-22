@@ -1,10 +1,15 @@
 .page-footer {
 	article {
 		margin-bottom: -$base-spacing-unit;
+		line-height: 1.2;
 	}
-	h3 {
+	h3, h2 {
 		color: $lightBlue;
 		text-shadow: 1.4px 1.4px 0px $black;
+		background-color: transparent;
+		margin-bottom: $step-1 + rem;
+		font-family: 'PT Sans', Helvetica, Arial ,sans-serif;
+		font-weight: 200;
 	}
 	ul {
 		padding: 0;

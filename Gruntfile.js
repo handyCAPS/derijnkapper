@@ -154,7 +154,7 @@ module.exports = function(grunt) {
       wordpressRemote: {
         options: {
           banner: '<%= banner %>',
-          style: 'compressed'
+          style: 'expanded'
         },
         files: [{
           expand: true,
@@ -262,6 +262,14 @@ module.exports = function(grunt) {
           cwd: 'lib/images',
           src: ['**/*.{png,jpg,jpeg,gif}'],
           dest: 'dist/images'
+        }]
+      },
+      wpRemote: {
+        files: [{
+          expand: true,
+          cwd: 'lib/images',
+          src: ['**/*.{png,jpg,jpeg,gif}'],
+          dest: '<%= wpRemote %>/themes/<%= wpFolder %>/images'
         }]
       }
     },

@@ -4,6 +4,9 @@
 		margin: $step3 + rem $step-1 + rem 0;
 		padding: $step1 + rem;
 		text-align: center;
+			&:last-of-type {
+				margin-right: 0;
+			}
 			ul {
 				display: none;
 			}

@@ -19,12 +19,12 @@
 <!-- <div id="outerWrap"> -->
 <header role="banner">
 	<div class="grid" id="headerWrap">
-		<div id="logo" class="grid__item one-sixth lap-one-third">
+		<div id="logo" class="grid__item desk-one-eighth lap-one-sixth palm-one-third">
 			<a href="<?php bloginfo('home'); ?>">
 			<img src="<?php echo THEMEPATH; ?>/images/kapper-logo.png" alt="logo" class="one-whole">
 			</a>
 		</div><!--  end logo  -->
-		<div id="navWrap" class="grid__item five-sixths lap-one-whole">
+		<div id="navWrap" class="grid__item desk-seven-eighths lap-five-sixths palm-one-whole">
 			<?php    /**
 				* Displays a navigation menu
 				* @param array $args Arguments

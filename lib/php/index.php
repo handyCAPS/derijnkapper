@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="grid">
-<div class="grid__item two-thirds lap-one-whole">
+<div class="grid__item two-thirds lap-one-whole palm-one-whole">
 	<div class="article-wrapper">
 	<?php if(have_posts()): while(have_posts()): the_post(); ?>
 		<article class="peeled">
@@ -49,7 +49,7 @@
 			<?php endwhile; endif; ?>
 		</div><!--  end frontSlideWrapper  -->
 	</div><!--  main  -->
-	<div class="grid__item one-third lap-one-whole sidebar">
+	<div class="grid__item one-third lap-one-whole palm-one-whole sidebar">
 		<?php get_sidebar(); ?>
 	</div><!--  sidebar  -->
 </div><!-- end main content -->
