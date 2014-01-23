@@ -102,11 +102,11 @@ module.exports = function(grunt) {
       },
       sass: {
         files: '**/*.scss',
-        tasks: ['sass']
+        tasks: ['sass', 'autoprefixer', 'copy']
       },
       views: {
         files: ['lib/html/**/*.html', 'lib/php/**/*.php', 'lib/<%= wpPluginFolder %>/**/*.php'],
-        tasks: ['htmlmin']
+        tasks: ['htmlmin', 'copy']
       },
       options: {
           livereload: true
@@ -151,19 +151,6 @@ module.exports = function(grunt) {
           ext: '.css'
         }]
       },
-      wordpressRemote: {
-        options: {
-          banner: '<%= banner %>',
-          style: 'expanded'
-        },
-        files: [{
-          expand: true,
-          cwd: 'lib/scss',
-          src: '**/*.scss',
-          dest: '<%= wpRemote %>/themes/<%= wpFolder %>/css',
-          ext: '.css'
-        }]
-      },
       wordpressPlugin: {
         options: {
           banner: '<%= banner %>',
@@ -204,19 +191,6 @@ module.exports = function(grunt) {
           dest: 'dist/html'
         }]
       },
-      php: {
-        options: {
-          collapseWhitespace: true,
-          removeComments: true,
-          removeOptionalTags: true
-        },
-        files: [{
-          expand: true,
-          cwd: 'lib/php',
-          src: ['**/*.php'],
-          dest: 'dist/php'
-        }]
-      },
       wordpress: {
         options: {
           collapseWhitespace: true,
@@ -230,20 +204,7 @@ module.exports = function(grunt) {
           dest: 'dist/<%= wpFolder %>'
         }]
       },
-      wordpressRemote: {
-        options: {
-          collapseWhitespace: true,
-          removeComments: true,
-          removeOptionalTags: true
-        },
-        files: [{
-          expand: true,
-          cwd: 'lib/php',
-          src: ['**/*.php'],
-          dest: '<%= wpRemote %>/themes/<%= wpFolder %>'
-        }]
-      },
-      wordpressPluginRemote: {
+      wordpressPlugins: {
         options: {
           collapseWhitespace: true
         },
@@ -251,7 +212,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'lib/<%= wpPluginFolder %>',
           src: ['**/*.php'],
-          dest: '<%= wpRemote %>/plugins'
+          dest: 'dist/<%= wpPluginFolder %>'
         }]
       }
     },
@@ -279,12 +240,21 @@ module.exports = function(grunt) {
       },
       dist: {
         src: 'dist/css/**/*.css'
+      }
+    },
+    copy: {
+      wpRemotePhp: {
+        expand: true,
+        flatten: true,
+        cwd: 'dist/php',
+        src: ['**'],
+        dest: '<%= wpRemote %>/themes/<%= wpFolder %>'
       },
-      wordpress: {
-        src: 'dist/<%= wpFolder %>/css/**/*.css'
-      },
-      wordpressRemote: {
-        src: '<%= wpRemote %>/themes/<%= wpFolder %>/css/**/*.css'
+      wpRemoteStyle: {
+        expand: true,
+        cwd: 'dist',
+        src: ['**/*.{css,js,jpg,jpeg,png,gif,ico}'],
+        dest: '<%= wpRemote %>/themes/<%= wpFolder %>'
       }
     }
   });

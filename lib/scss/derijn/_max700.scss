@@ -1,0 +1,55 @@
+@media screen and (max-width: 700px) {
+	#logo {
+		margin-bottom: $base-spacing-unit
+	}
+	#headerWrap {
+		margin-bottom: -12px;
+	}
+	.topnav {
+		transform: scaleX(0.9) scaleY(0.2);
+		transition: all 0.3s ease-out;
+		position: absolute;
+		top: -116px;
+		right: 13px;
+			ul {
+				width: 100%;
+					li {
+						display: block;
+						width: 100%;
+						background-color: $darkBlue;
+						margin: $step1 + rem 0 ;
+						padding: 0;
+						pointer-events: none;
+							&:first-of-type {
+								margin-top: 0;
+							}
+							&:hover, &:active, &.current-menu-item {
+								background-color: desaturate($darkBlue, 20);
+									&:after {
+										display: none;
+									}
+							}
+							a {
+								width: 100%;
+								padding: $step1 + rem 0;
+								opacity: 0;
+							}
+					}
+			}
+			&.open {
+				transform: scale(1.0);
+				position: relative;
+				top: 0;
+				right: 0;
+					ul {
+							li {
+								pointer-events: auto;
+									a {
+										opacity: 1;
+										padding: $step-1 + rem 0;
+									}
+							}
+					}
+			}
+	}
+}

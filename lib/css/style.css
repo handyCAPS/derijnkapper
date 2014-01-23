@@ -3460,6 +3460,60 @@ article {
   padding: 1rem;
   margin-bottom: 24px; }
 
+@media screen and (max-width: 700px) {
+  /* line 2, ../scss/derijn/_max700.scss */
+  #logo {
+    margin-bottom: 24px; }
+
+  /* line 5, ../scss/derijn/_max700.scss */
+  #headerWrap {
+    margin-bottom: -12px; }
+
+  /* line 8, ../scss/derijn/_max700.scss */
+  .topnav {
+    transform: scaleX(0.9) scaleY(0.2);
+    transition: all 0.3s ease-out;
+    position: absolute;
+    top: -116px;
+    right: 13px; }
+    /* line 14, ../scss/derijn/_max700.scss */
+    .topnav ul {
+      width: 100%; }
+      /* line 16, ../scss/derijn/_max700.scss */
+      .topnav ul li {
+        display: block;
+        width: 100%;
+        background-color: #263a55;
+        margin: 1rem 0;
+        padding: 0;
+        pointer-events: none; }
+        /* line 23, ../scss/derijn/_max700.scss */
+        .topnav ul li:first-of-type {
+          margin-top: 0; }
+        /* line 26, ../scss/derijn/_max700.scss */
+        .topnav ul li:hover, .topnav ul li:active, .topnav ul li.current-menu-item {
+          background-color: #323c49; }
+          /* line 28, ../scss/derijn/_max700.scss */
+          .topnav ul li:hover:after, .topnav ul li:active:after, .topnav ul li.current-menu-item:after {
+            display: none; }
+        /* line 32, ../scss/derijn/_max700.scss */
+        .topnav ul li a {
+          width: 100%;
+          padding: 1rem 0;
+          opacity: 0; }
+    /* line 39, ../scss/derijn/_max700.scss */
+    .topnav.open {
+      transform: scale(1);
+      position: relative;
+      top: 0;
+      right: 0; }
+      /* line 45, ../scss/derijn/_max700.scss */
+      .topnav.open ul li {
+        pointer-events: auto; }
+        /* line 47, ../scss/derijn/_max700.scss */
+        .topnav.open ul li a {
+          opacity: 1;
+          padding: 0.61805rem 0; } }
 /* 
  * 	Core Owl Carousel CSS File
  *	v1.24
