@@ -64,7 +64,7 @@ function derijn_pricelist() {
 	$menu_slug = 'derijn_pricelist_options';
 	$function = 'derijn_pricelist_admin_page';
 	$icon_url = 'dashicons-cart';
-	$position = 10;
+	$position = 50;
 	add_menu_page( $page_title, $menu_title, $capability, $menu_slug, $function, $icon_url, $position );
 }
 add_action('admin_menu', 'derijn_pricelist' );

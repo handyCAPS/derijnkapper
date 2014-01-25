@@ -6,11 +6,9 @@ function derijn_register_scripts() {
 	// first the styles
 	wp_register_style('derijn', THEMEPATH . '/css/style.css', array(), false, 'all' );
 	wp_register_style( 'googlefonts', '//fonts.googleapis.com/css?family=PT+Sans|Roboto+Slab', array(), false, 'all');
-	// wp_register_style('app', THEMEPATH . '/stylesheets/app.css', array(), false, 'all' );
 
 	wp_enqueue_style('derijn');
 	wp_enqueue_style('googlefonts' );
-	// wp_enqueue_style('app' );
 
 	// then the scripts
 	wp_register_script( 'jquerylocal', THEMEPATH . '/js/jquery.min.js' , array(), false, true );
@@ -61,7 +59,7 @@ function derijn_custom_post_type() {
 		'show_in_menu'        => true,
 		'show_in_nav_menus'   => true,
 		'show_in_admin_bar'   => true,
-		'menu_position'       => 5,
+		'menu_position'       => 40,
 		'menu_icon'           => 'dashicons-format-gallery',
 		'can_export'          => true,
 		'has_archive'         => true,
@@ -75,6 +73,12 @@ function derijn_custom_post_type() {
 
 // Hook into the 'init' action
 add_action( 'init', 'derijn_custom_post_type', 0 );
+
+// Removing the comments admin menu, because its not needed
+function remove_comment_menu() {
+	remove_menu_page( 'edit-comments.php' );
+}
+add_action('admin_menu','remove_comment_menu');
 
 // Register Custom Post Type
 function derijn_homeslides() {
@@ -106,7 +110,7 @@ function derijn_homeslides() {
 		'show_in_menu'        => true,
 		'show_in_nav_menus'   => true,
 		'show_in_admin_bar'   => true,
-		'menu_position'       => 5,
+		'menu_position'       => 30,
 		'menu_icon'           => 'dashicons-images-alt',
 		'can_export'          => true,
 		'has_archive'         => true,

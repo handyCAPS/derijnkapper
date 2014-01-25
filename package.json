@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "description": "0.1.0",
   "main": "index.js",
-  "wpFolder": "derijnkapper",
+  "wpFolder": "theme/derijnkapper",
   "wp": {
-    "folder": "derijnkapper",
+    "folder": "theme/derijnkapper",
     "remote": "../wordpress/wp-content",
     "pluginFolder": "plugins",
     "plugins": {

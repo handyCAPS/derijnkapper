@@ -163,19 +163,6 @@ module.exports = function(grunt) {
           dest: 'dist/<%= wpPluginFolder %>/',
           ext: '.css'
         }]
-      },
-      wordpressPluginRemote: {
-        options: {
-          banner: '<%= banner %>',
-          style: 'compressed'
-        },
-        files: [{
-          expand: true,
-          cwd: 'lib/<%= wpPluginFolder %>',
-          src: '**/*.scss',
-          dest: '<%= wpRemote %>/plugins',
-          ext: '.css'
-        }]
       }
     },
     htmlmin: {
@@ -224,14 +211,6 @@ module.exports = function(grunt) {
           src: ['**/*.{png,jpg,jpeg,gif}'],
           dest: 'dist/images'
         }]
-      },
-      wpRemote: {
-        files: [{
-          expand: true,
-          cwd: 'lib/images',
-          src: ['**/*.{png,jpg,jpeg,gif}'],
-          dest: '<%= wpRemote %>/themes/<%= wpFolder %>/images'
-        }]
       }
     },
     autoprefixer: {
@@ -243,18 +222,17 @@ module.exports = function(grunt) {
       }
     },
     copy: {
-      wpRemotePhp: {
+      wpRemote: {
         expand: true,
-        flatten: true,
-        cwd: 'dist/php',
-        src: ['**'],
-        dest: '<%= wpRemote %>/themes/<%= wpFolder %>'
+        cwd: 'dist/theme/',
+        src: '*/**',
+        dest: '<%= wpRemote %>/themes'
       },
-      wpRemoteStyle: {
+      pluginsRemote: {
         expand: true,
-        cwd: 'dist',
-        src: ['**/*.{css,js,jpg,jpeg,png,gif,ico}'],
-        dest: '<%= wpRemote %>/themes/<%= wpFolder %>'
+        cwd: 'dist/plugins',
+        src: '*/**',
+        dest: '<%= wpRemote %>/plugins'
       }
     }
   });
