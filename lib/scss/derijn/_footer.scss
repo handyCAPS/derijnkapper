@@ -10,6 +10,7 @@
 		margin-bottom: $step-1 + rem;
 		font-family: 'PT Sans', Helvetica, Arial ,sans-serif;
 		font-weight: 200;
+		box-shadow: none;
 	}
 	ul {
 		padding: 0;
@@ -19,4 +20,19 @@
 				margin-bottom: $step2 + rem;
 			}
 	}
+}
+
+.address {
+	border: none;
+	background-color: transparent;
+		tr, td {
+			border: none;
+		}
+		tr {
+			color: $white;
+			font-size: $step2 + rem;
+				&.large {
+					font-size: $step3 + rem;
+				}
+		}
 }

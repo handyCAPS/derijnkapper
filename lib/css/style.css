@@ -3335,12 +3335,14 @@ article {
   /* line 6, ../scss/derijn/_article.scss */
   article h1, article h2 {
     display: inline-block;
-    background-color: #c5d2d7;
-    color: #263a55;
-    text-shadow: 0.5px 0.5px 0px #f9f9f9, 1px 1px 0px #f9f9f9, 1.5px 1.5px 0px #f9f9f9;
-    padding: 0 1rem;
+    background-color: #E8782D;
+    color: #f9f9f9;
+    text-shadow: 0.5px 0.5px 0px #1f2921, 1px 1px 0px #1f2921, 1.5px 1.5px 1px #1f2921;
+    padding: 1.618rem 1rem 0.23608rem;
+    margin-bottom: 1rem;
     position: relative;
-    left: -1rem;
+    top: -1rem;
+    box-shadow: 3px 3px 3px 0px #162232;
     font-weight: bold;
     font-size: 2.61792rem; }
   /* line 11, ../scss/derijn/_article.scss */
@@ -3380,15 +3382,31 @@ article {
   background-color: transparent;
   margin-bottom: 0.61805rem;
   font-family: 'PT Sans', Helvetica, Arial ,sans-serif;
-  font-weight: 200; }
-/* line 14, ../scss/derijn/_footer.scss */
+  font-weight: 200;
+  box-shadow: none; }
+/* line 15, ../scss/derijn/_footer.scss */
 .page-footer ul {
   padding: 0;
   margin: 0 0 0 1rem;
   list-style: none; }
-  /* line 18, ../scss/derijn/_footer.scss */
+  /* line 19, ../scss/derijn/_footer.scss */
   .page-footer ul li {
     margin-bottom: 1.618rem; }
+
+/* line 25, ../scss/derijn/_footer.scss */
+.address {
+  border: none;
+  background-color: transparent; }
+  /* line 28, ../scss/derijn/_footer.scss */
+  .address tr, .address td {
+    border: none; }
+  /* line 31, ../scss/derijn/_footer.scss */
+  .address tr {
+    color: #f9f9f9;
+    font-size: 1.618rem; }
+    /* line 34, ../scss/derijn/_footer.scss */
+    .address tr.large {
+      font-size: 2.61792rem; }
 
 /* line 1, ../scss/derijn/_derijn-helpers.scss */
 .reltv {
