@@ -54,13 +54,9 @@ $body-bg: #fff;
 $body-font-color: $white;
 $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
-$headerFont: 'Roboto Slab', 'Cherry Swash', serif;
+$headerFont: 'roboto_slabregular', 'Cherry Swash', serif;
 
-$bodyFont: 'PT Sans', serif;
-
-// .row {
-// 	max-width: 100%;
-// }
+$bodyFont: 'pt_sansregular', serif;
 
 ul, ol {
 	list-style-position: inside;

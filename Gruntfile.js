@@ -41,9 +41,9 @@ module.exports = function(grunt) {
         src: '<%= concat.dist.dest %>',
         dest: 'dist/js/<%= pkg.name %>.min.js'
       },
-      wordpressRemote: {
+      theme: {
         src: '<%= concat.dist.dest %>',
-        dest: '<%= pkg.wp.remote %>/themes/<%= wpFolder %>/js/<%= pkg.name %>.min.js'
+        dest: 'dist/<%= wpFolder %>/js/<%= pkg.name %>.min.js'
       },
       wpPlugins: {
         files: [{
@@ -98,7 +98,7 @@ module.exports = function(grunt) {
       },
       lib_test: {
         files: '<%= jshint.lib_test.src %>',
-        tasks: ['jshint:lib_test', 'concat', 'uglify']
+        tasks: ['jshint:lib_test', 'concat', 'uglify', 'copy']
       },
       sass: {
         files: '**/*.scss',
@@ -215,10 +215,13 @@ module.exports = function(grunt) {
     },
     autoprefixer: {
       options: {
-        diff: true
+        diff: true,
       },
       dist: {
         src: 'dist/css/**/*.css'
+      },
+      theme: {
+        src: 'dist/theme/**/*.css'
       }
     },
     copy: {

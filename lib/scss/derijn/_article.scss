@@ -5,7 +5,7 @@ article {
 	font-size: $step1 + rem;
 		h1, h2 {
 			@include h-label;
-			font-weight: bold;
+			// font-weight: bold;
 			font-size: $step3 + rem;
 		}
 		p {

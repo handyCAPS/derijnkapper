@@ -7,12 +7,12 @@
 	 ?>
 		<div class="slidepost-item">
 			<div class="img-wrap">
-				<img class="lazyOwl" data-src="" src="<?php
+				<img class="lazyOwl" data-src="<?php
 				if (has_post_thumbnail()) {
 					echo $thumbnail_permalink;
 				} else {
 					echo THEMEPATH . '/images/image_1.jpeg';
-				 }?>" alt="placeholder">
+				 }?>" src="#" alt="placeholder">
 			</div><!--  end img-wrap  -->
 			<article class="overlay">
 				<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
