@@ -2,6 +2,7 @@
 article {
 	background-color: $darkBlue;
 	padding: $step1 + rem;
+	padding-top: 0;
 	font-size: $step1 + rem;
 		h1, h2 {
 			@include h-label;

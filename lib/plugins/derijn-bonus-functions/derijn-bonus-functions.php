@@ -48,9 +48,6 @@ class De_Rijn_Table_Widget extends WP_Widget {
                 ${$key} = esc_html($value);
             }
         }
-        // $dayone = $instance['dayone'];
-        // $daytwo = $instance['daytwo'];
-        // $daythree = $instance['daythree'];
 
         $derijn_table = "
         <table>
@@ -68,6 +65,11 @@ class De_Rijn_Table_Widget extends WP_Widget {
                 <td>$daythree</td>
                 <td>$timethree</td>
                 <td>$typethree</td>
+            </tr>
+            <tr>
+                <td>$dayfour</td>
+                <td>$timefour</td>
+                <td>$typefour</td>
             </tr>
         </table>
         ";
@@ -120,7 +122,10 @@ class De_Rijn_Table_Widget extends WP_Widget {
             'timethree',
             'typeone',
             'typetwo',
-            'typethree'
+            'typethree',
+            'dayfour',
+            'timefour',
+            'typefour'
             );
 
         foreach ($input_fields as $key => $value) {
@@ -141,18 +146,24 @@ class De_Rijn_Table_Widget extends WP_Widget {
         <input class='widefat' type='text' name='$daytwoname' id='$daytwoid' value='$daytwo'><br><br>
         <label for='$daythreeid'>Dag 3</label>
         <input class='widefat' type='text' name='$daythreename' id='$daythreeid' value='$daythree'><br><br><br>
+        <label for='$dayfourid'>Dag 4</label>
+        <input class='widefat' type='text' name='$dayfourname' id='$dayfourid' value='$dayfour'><br><br><br>
         <label for='$timeoneid'>Tijd $dayone</label>
         <input class='widefat' type='text' name='$timeonename' id='$timeoneid' value='$timeone'><br><br>
         <label for='$timetwoid'>Tijd $daytwo</label>
         <input class='widefat' type='text' name='$timetwoname' id='$timetwoid' value='$timetwo'><br><br>
         <label for='$timethreeid'>Tijd $daythree</label>
         <input class='widefat' type='text' name='$timethreename' id='$timethreeid' value='$timethree'><br><br><br>
+        <label for='$timefourid'>Tijd $dayfour</label>
+        <input class='widefat' type='text' name='$timefourname' id='$timefourid' value='$timefour'><br><br><br>
         <label for='$typeoneid'>Afspraak $dayone</label>
         <input class='widefat' type='text' name='$typeonename' id='$typeoneid' value='$typeone'><br><br>
         <label for='$typetwoid'>Afspraak $daytwo</label>
         <input class='widefat' type='text' name='$typetwoname' id='$typetwoid' value='$typetwo'><br><br>
         <label for='$typethreeid'>Afspraak $daythree</label>
         <input class='widefat' type='text' name='$typethreename' id='$typethreeid' value='$typethree'><br><br>
+        <label for='$typefourid'>Afspraak $dayfour</label>
+        <input class='widefat' type='text' name='$typefourname' id='$typefourid' value='$typefour'><br><br>
         ";
 
         echo $title_form;

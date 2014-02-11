@@ -1,7 +1,9 @@
 .page-footer {
 	article {
 		margin-bottom: -$base-spacing-unit;
-		line-height: 1.2;
+		line-height: 1;
+		padding: $step1 + rem $step-1 + rem $step1 + rem 0;
+		overflow: hidden;
 	}
 	h3, h2 {
 		color: $lightBlue;
@@ -11,13 +13,20 @@
 		font-family: 'PT Sans', Helvetica, Arial ,sans-serif;
 		font-weight: 200;
 		box-shadow: none;
-	}
-	ul {
 		padding: 0;
-		margin: 0 0 0 $step1 + rem;
-		list-style: none;
-			li {
-				margin-bottom: $step2 + rem;
+	}
+	.address-wrapper {
+		padding-left: $step-1 + rem;
+	}
+	.logo {
+		float: right;
+		// margin-bottom: $step-1 +rem;
+	}
+	.map {
+		display: inline-block;
+		margin: $step-1 + rem auto 0;
+			img {
+				width: 100%;
 			}
 	}
 }

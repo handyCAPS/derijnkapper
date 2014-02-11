@@ -155,9 +155,7 @@ function derijn_update_pricelist() {
 	die();
 
 }
-function derijn_test_pricelist() {
-	echo 'kkk';
-}
+
 function derijn_delete_pricelist() {
 	global $wpdb;
 	$table_name = $wpdb->prefix . "derijn_pricelist";
@@ -261,24 +259,6 @@ class De_Rijn_Prijzen_Widget extends WP_Widget {
      **/
     function form( $instance ) {
 
-        $input_fields = array(
-            'title',
-            'dienst',
-            'prijs'
-            );
-
-        foreach ($input_fields as $key => $value) {
-            ${$value} = $instance[$value];
-            ${$value . 'id'} = $this->get_field_name($value);
-            ${$value . 'name'} = $this->get_field_name($value);
-        }
-        $prize_form = "
-        <br>
-        <label for='$titleid'>Titel</label><br>
-        <input type='text' name='$titlename' id='$titleid' value='$title'><br>
-        ";
-
-        echo $prize_form;
         echo $this->get_the_pricelist();
 
     }

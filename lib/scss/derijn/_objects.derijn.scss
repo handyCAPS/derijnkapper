@@ -1,14 +1,10 @@
 
 @mixin h-label {
 	display: inline-block;
-	// background-color: #E8782D;
 	color: $white;
 	text-shadow: 	0.5px 0.5px 0px $black,
 					1px 1px 0px $black,
 					1.5px 1.5px 1px $black;
-	// padding: $step2 + rem $step1 + rem $step-3 + rem;
-	margin: $step1 + rem 0 $step-1 + rem;
-	position: relative;
-	top: -$step1 + rem;
-	// box-shadow: 3px 3px 3px 0px darken($darkBlue, 10);
+	margin: $step-1 + rem 0 $step-1 + rem;
+	font-weight: 200;
 }

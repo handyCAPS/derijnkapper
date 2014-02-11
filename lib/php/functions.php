@@ -5,10 +5,8 @@ define('THEMEPATH', get_stylesheet_directory_uri());
 function derijn_register_scripts() {
 	// first the styles
 	wp_register_style('derijn', THEMEPATH . '/css/style.css', array(), false, 'all' );
-	// wp_register_style( 'googlefonts', '//fonts.googleapis.com/css?family=PT+Sans|Roboto+Slab', array(), false, 'all');
 
 	wp_enqueue_style('derijn');
-	// wp_enqueue_style('googlefonts' );
 
 	// then the scripts
 	wp_register_script( 'jquerylocal', THEMEPATH . '/js/jquery.min.js' , array(), false, true );
